@@ -19,8 +19,8 @@ const SlideList = [
         textPosition: 'text-left',
         category: 'Welcome to my World',
         description: '',
-        // buttonText: 'Contact me',
-        // buttonLink: 'mailto:leokwok1997@hotmail.com'
+        buttonText: 'Contact me',
+        buttonLink: 'mailto:leokwok1997@hotmail.com'
     }
 ]
 const PortfolioLanding = () => {
