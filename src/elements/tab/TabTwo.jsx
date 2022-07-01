@@ -5,9 +5,8 @@ class TabsTwo extends Component{
     render(){
         let 
         tab1 = "Main skills",
-        tab2 = "Awards",
-        tab3 = "Experience",
-        tab4 = "Education & Certification";
+        tab2 = "Education & Certification",
+        tab3 = "Experience";
         const { tabStyle } = this.props
         return(
             <div>
@@ -21,23 +20,21 @@ class TabsTwo extends Component{
                                         <Tab>{tab1}</Tab>
                                         <Tab>{tab2}</Tab>
                                         <Tab>{tab3}</Tab>
-                                        <Tab>{tab4}</Tab>
                                     </TabList>
-
                                     <TabPanel>
                                         <div className="single-tab-content">
                                             <ul>
                                                 <li>
-                                                    <a href="/service">User experience design <span> - UI/UX</span></a>
-                                                    Delight the user and make it work.
+                                                    <a href="/service">Programming Languages <span></span></a>
+                                                    Java, C++, Kotlin, Python, SQL, R
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Web and user interface design<span> - Development</span></a>
-                                                    Websites, web experiences, ...
+                                                    <a href="/service">Platform & Tool<span></span></a>
+                                                    Git, PowerBI, ArcGIS, Adobe CC Suite, Tableau, Firebase, Google Cloud Platform, NumPy, TensorFlow
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Interaction design <span> - Animation</span></a>
-                                                    I like to move it move it.experiencesexperiences
+                                                    <a href="/service">Web Technology <span></span></a>
+                                                    HTML, CSS, JavaScript, Figma, LucidChart, React, Bootstrap, Node.js, Redux.js, MongoDB
                                                 </li>
                                             </ul>
                                         </div>
@@ -47,31 +44,13 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Awwwards.com <span>- Winner</span></a> 2019 - 2020
+                                                   <a href="/service">M.S. In Computer Science<span> - Syracuse University, Syracuse, NY</span></a> Jun 2023
                                                </li>
                                                <li>
-                                                   <a href="/service">CSS Design Awards <span>- Winner</span></a> 2017 - 2018
+                                                   <a href="/service">B.A. Geography: Data Science w/ Minor In Informatics<span> - University of Washington, Seattle, WA</span></a> Jun 2021
                                                </li>
                                                <li>
-                                                   <a href="/service">Design nominees <span>- site of the day</span></a> 2013- 2014
-                                               </li>
-                                           </ul>
-                                       </div>
-                                    </TabPanel>
-
-
-
-                                    <TabPanel>
-                                       <div className="single-tab-content">
-                                           <ul>
-                                               <li>
-                                                   <a href="/service">Sr. Front-end Engineer<span> - Google</span></a> 2018 - Current
-                                               </li>
-                                               <li>
-                                                   <a href="/service">Front-end Engineer<span> - Microsoft</span></a> 2017 - 2018
-                                               </li>
-                                               <li>
-                                                   <a href="/service">Software Engineer<span> - Alibaba </span></a> 2013- 2014
+                                                   <a href="/service">Database Management Certificate<span> - University of Washington, Seattle, WA</span></a> Aug 2018
                                                </li>
                                            </ul>
                                        </div>
@@ -81,18 +60,11 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">BSc In CSE<span> - ABC University, Los Angeles, CA</span></a> 2010
-                                               </li>
-                                               <li>
-                                                   <a href="/service">Diploma in Computer Science<span> - Gamma Technical Institute</span></a> 2009
-                                               </li>
-                                               <li>
-                                                   <a href="/service">Graphic Designer<span> - ABC Institute, Los Angeles, CA</span></a> 2007
+                                                   <a href="/service">Full Stack Developer Internship<span> - Soca Networks</span></a> May 2022 - Sep 2022
                                                </li>
                                            </ul>
                                        </div>
                                     </TabPanel>
-                                    
                                 </Tabs>
                             </div>
                         </div>

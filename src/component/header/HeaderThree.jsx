@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { FaInstagram , FaLinkedinIn } from "react-icons/fa";
 import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
+import './header.css'
 
 const SocialShare = [
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-leo-guo-540742102/'},
@@ -14,7 +15,6 @@ class HeaderThree extends Component{
         this.CLoseMenuTrigger = this.CLoseMenuTrigger.bind(this);
         this.stickyHeader = this.stickyHeader.bind(this);
 
-       //  this.subMetuTrigger = this.subMetuTrigger.bind(this);
         window.addEventListener('load', function() {
             console.log('All assets are loaded');
         })
@@ -57,11 +57,11 @@ class HeaderThree extends Component{
         }else if(logo === 'dark'){
             logoUrl = <img src="/assets/images/logo/logo-dark.png" alt="Digital Agency" />;
         }else if(logo === 'symbol-dark'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-dark.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-leo-gray.png" alt="Digital Agency" />;
         }else if(logo === 'symbol-light'){
-            logoUrl = <img src="/assets/images/logo/logo-symbol-light.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-leo-gray.png" alt="Digital Agency" />;
         }else{
-            logoUrl = <img src="/assets/images/logo/logo.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-leo-gray.png" alt="Digital Agency" />;
         }
         
         return(
@@ -69,7 +69,7 @@ class HeaderThree extends Component{
                 <div className="header-wrapper">
                     <div className="header-left d-flex align-items-center">
                         <div className="logo">
-                            <a href={this.props.homeLink}>
+                            <a href={this.props.homeLink} id="siteLogo" >
                                 {logoUrl}
                             </a>
                         </div>

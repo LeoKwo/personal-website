@@ -29,8 +29,7 @@ const PortfolioLanding = () => {
     const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
-            <Helmet pageTitle="Portfolio Landing" />
-
+            <Helmet pageTitle="Ruikang Guo" />
             <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
             <div id="home" className="fix">
@@ -183,7 +182,7 @@ const PortfolioLanding = () => {
             </div>
             {/* End Blog Area */}
 
-            {/* Start COntact Area */}
+            {/* Start Contact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--1">
                     <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />

@@ -3,7 +3,7 @@
 ----------------------------*/
 
 .active-dark {
-    background: #101010;
+    background: #141414;
     [data-overlay="6"]:before,
     [data-black-overlay="6"]:before,
     [data-white-overlay="6"]:before {
@@ -29,11 +29,11 @@
     }
     .bg_color--1 ,
     .brand-separation {
-        background: #191919;
+        background: #2a2a2c;
     }
     .bg_color--5,
     .footer-right {
-        background: #101010;
+        background: #141414;
     }
     ul.brand-style-2 img {
         filter: invert(1);
@@ -95,7 +95,7 @@
         border-color: $theme-color;
     }
     .header-area.header--fixed.sticky {
-        background: #191919;
+        background: #2a2a2c;
     }
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn {
         color: #ffffff;
@@ -106,7 +106,7 @@
         border-color: $theme-color;
     }
     .bg_image--25 {
-        background-color: #101010;
+        background-color: #141414;
         background-image: url(/assets/images/bg/bg-image-28.jpg) !important;
         background-position: center center;
         background-repeat: no-repeat;
@@ -132,7 +132,7 @@
             color: #c6c9d8 !important;
         }
         .header-area .header-wrapper .mainmenunav ul.mainmenu {
-            background: #101010;
+            background: #141414;
         }
         .header-area .header-wrapper.menu-open .close-menu span {
             color: #c6c9d8 !important;
@@ -155,7 +155,7 @@
             color: #c6c9d8 !important;
         }
         .header-area .header-wrapper .mainmenunav ul.mainmenu {
-            background: #101010;
+            background: #141414;
         }
         .header-area .header-wrapper.menu-open .close-menu span {
             color: #c6c9d8 !important;
