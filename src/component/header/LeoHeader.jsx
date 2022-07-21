@@ -5,10 +5,10 @@ import Scrollspy from 'react-scrollspy'
 import './header.css'
 
 const SocialShare = [
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-leo-guo-540742102/'},
+    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'}
 ]
-class HeaderThree extends Component{
+class LeoHeader extends Component{
     constructor(props) {
         super(props);
         this.menuTrigger = this.menuTrigger.bind(this);
@@ -74,13 +74,13 @@ class HeaderThree extends Component{
                             </a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
-                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio','blog','contact']} currentClassName="is-current" offset={-200}>
+                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio']} currentClassName="is-current" offset={-200}>
                                 <li><a href="#home">Home</a></li>
                                 <li><a href="#about">About</a></li>
-                                <li><a href="#service">Service</a></li>
-                                <li><a href="#portfolio">Portfolio</a></li>
-                                <li><a href="#blog">Blog</a></li>
-                                <li><a href="#contact">Contact</a></li>
+                                <li><a href="#service">My Skillset</a></li>
+                                <li><a href="#portfolio">My Projects</a></li>
+                                {/* <li><a href="#blog">Blog</a></li> */}
+                                {/* <li><a href="#contact">Contact</a></li> */}
                             </Scrollspy>
                         </nav>
                     </div>
@@ -111,4 +111,4 @@ class HeaderThree extends Component{
         )
     }
 }
-export default HeaderThree;
+export default LeoHeader;

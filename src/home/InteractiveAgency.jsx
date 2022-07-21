@@ -6,7 +6,7 @@ import Slider from "react-slick";
 import { slideSlick } from "../page-demo/script";
 import { FiCast , FiLayers , FiUsers , FiMonitor ,FiChevronUp } from "react-icons/fi";
 import Header from "../component/header/Header";
-import FooterTwo from "../component/footer/FooterTwo";
+import LeoFooter from "../component/footer/LeoFooter";
 import VideoModal from "../blocks/VideoModal";
 import BrandTwo from "../elements/BrandTwo";
 
@@ -212,7 +212,7 @@ const InteractiveAgency = () => {
             </div>
             {/* End Back To Top */}
 
-            <FooterTwo />
+            <LeoFooter />
         </>
     )
 }

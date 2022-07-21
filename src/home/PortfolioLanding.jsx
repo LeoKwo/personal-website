@@ -1,8 +1,8 @@
 import React from 'react';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import HeaderThree from "../component/header/HeaderThree";
-import FooterTwo from "../component/footer/FooterTwo";
+import LeoHeader from "../component/header/LeoHeader";
+import LeoFooter from "../component/footer/LeoFooter";
 import TabTwo from "../elements/tab/TabTwo";
 import ContactOne from "../elements/contact/ContactOne";
 import PortfolioList from "../elements/portfolio/PortfolioList";
@@ -27,7 +27,7 @@ const PortfolioLanding = () => {
     return (
         <div>
             <Helmet pageTitle="Portfolio Landing" />
-            <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+            <LeoHeader homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
             <div id="home" className="fix">
                 <div className="slider-wrapper">
@@ -180,7 +180,7 @@ const PortfolioLanding = () => {
             </div>
             {/* End COntact Area */}
 
-            <FooterTwo />
+            <LeoFooter />
             {/* Start Back To Top */}
             <div className="backto-top">
                 <ScrollToTop showUnder={160}>

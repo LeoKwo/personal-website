@@ -3,7 +3,7 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import PortfolioMasonry from "../elements/portfolio/PortfolioMasonry";
 import Header from "../component/header/Header";
-import FooterTwo from "../component/footer/FooterTwo";
+import LeoFooter from "../component/footer/LeoFooter";
 import Brand from "../elements/Brand";
 import Helmet from "../component/common/Helmet";
 
@@ -98,7 +98,7 @@ class HomePortfolio extends Component{
                 {/* End Brand Area */}
 
                 {/* Start Footer Area  */}
-                <FooterTwo />
+                <LeoFooter />
                 {/* End Footer Area  */}
                 {/* Start Back To Top */}
                 <div className="backto-top">

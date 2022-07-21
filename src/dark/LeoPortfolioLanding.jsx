@@ -6,8 +6,8 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import Helmet from "../component/common/Helmet";
 import TextLoop from "react-text-loop";
-import HeaderThree from "../component/header/HeaderThree";
-import FooterTwo from "../component/footer/FooterTwo";
+import LeoHeader from "../component/header/LeoHeader";
+import LeoFooter from "../component/footer/LeoFooter";
 import TabTwo from "../elements/tab/TabTwo";
 import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
@@ -30,7 +30,7 @@ const PortfolioLanding = () => {
     return (
         <div className="active-dark">
             <Helmet pageTitle="Ruikang Guo" />
-            <HeaderThree homeLink="/" logo="symbol-dark" color="color-black"/>
+            <LeoHeader homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
             <div id="home" className="fix">
                 <div className="slider-wrapper">
@@ -101,8 +101,8 @@ const PortfolioLanding = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">My Awesome Service</h2>
-                                    <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                    <h2 className="title">My Skillset</h2>
+                                    <p>I am always eager to learn and develop new skills.</p>
                                 </div>
                             </div>
                         </div>
@@ -124,7 +124,7 @@ const PortfolioLanding = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">My Latest Project</h2>
+                                        <h2 className="title">My Latest Projects</h2>
                                         <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
                                     </div>
                                 </div>
@@ -146,7 +146,7 @@ const PortfolioLanding = () => {
             {/* End Portfolio Area */}
 
             {/* Start Blog Area */}
-            <div id="blog" className="fix">
+            {/* <div id="blog" className="fix">
                 <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
                     <div className="container">
                         <div className="row align-items-end">
@@ -179,18 +179,18 @@ const PortfolioLanding = () => {
                         </div>    
                     </div>    
                 </div>
-            </div>
+            </div> */}
             {/* End Blog Area */}
 
             {/* Start Contact Area */}
-            <div id="contact" className="fix">
+            {/* <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--1">
                     <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />
                 </div>
-            </div>
+            </div> */}
             {/* End COntact Area */}
 
-            <FooterTwo />
+            <LeoFooter />
             {/* Start Back To Top */}
             <div className="backto-top">
                 <ScrollToTop showUnder={160}>

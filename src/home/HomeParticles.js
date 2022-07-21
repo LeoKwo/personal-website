@@ -12,7 +12,7 @@ import Testimonial from "../elements/Testimonial";
 import Team from "../elements/Team";
 import BlogContent from "../elements/blog/BlogContent";
 import BrandTwo from "../elements/BrandTwo";
-import FooterTwo from "../component/footer/FooterTwo";
+import LeoFooter from "../component/footer/LeoFooter";
 import Contact from "../elements/contact/ContactTwo";
 import Helmet from "../component/common/Helmet";
 
@@ -455,7 +455,7 @@ class HomeParticles extends Component{
                 {/* End Brand Area */}
 
                  {/* Start Footer Style  */}
-                 <FooterTwo />
+                 <LeoFooter />
                 {/* End Footer Style  */}
                 
                 {/* Start Back To Top */}

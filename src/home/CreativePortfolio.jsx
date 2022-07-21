@@ -1,6 +1,6 @@
 import React from 'react';
 import ScrollToTop from 'react-scroll-up';
-import FooterTwo from "../component/footer/FooterTwo";
+import LeoFooter from "../component/footer/LeoFooter";
 import { FiChevronUp} from "react-icons/fi";
 import Header from "../component/header/HeaderFour";
 import Helmet from "../component/common/Helmet";
@@ -108,7 +108,7 @@ const CreativePortfolio = () => {
             {/* End Portfolio Area  */}            
 
             {/* Start Footer Style  */}
-            <FooterTwo />
+            <LeoFooter />
             {/* End Footer Style  */}
             
             {/* Start Back To Top */}

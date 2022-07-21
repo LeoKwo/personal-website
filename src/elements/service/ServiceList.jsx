@@ -1,34 +1,38 @@
 import React ,{ Component }from "react";
 import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
+import { AiOutlineAndroid } from "react-icons/ai";
+import { FaReact, FaAndroid, FaNodeJs, FaDocker } from "react-icons/fa";
+import { SiRedux, SiSpring, SiMongodb } from "react-icons/si";
 
 const ServiceList = [
+    
     {
-        icon: <FiCast />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FiLayers />,
+        icon: <FaReact />,
         title: 'Website Development',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
-        icon: <FiUsers />,
+        icon: <FaAndroid />,
+        title: 'Business Stratagy',
+        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+    },
+    {
+        icon: <FaNodeJs />,
         title: 'Marketing & Reporting',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     { 
-        icon: <FiMonitor />,
+        icon: <SiSpring />,
         title: 'Mobile App Development',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
-        icon: <FiUsers />,
+        icon: <FaDocker />,
         title: 'Marketing & Reporting',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     { 
-        icon: <FiMonitor />,
+        icon: <SiMongodb />,
         title: 'Mobile App Development',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     }
