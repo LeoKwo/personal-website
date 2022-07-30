@@ -79,8 +79,6 @@ class LeoHeader extends Component{
                                 <li><a href="#about">About</a></li>
                                 <li><a href="#service">My Skillset</a></li>
                                 <li><a href="#portfolio">My Projects</a></li>
-                                {/* <li><a href="#blog">Blog</a></li> */}
-                                {/* <li><a href="#contact">Contact</a></li> */}
                             </Scrollspy>
                         </nav>
                     </div>
@@ -93,8 +91,8 @@ class LeoHeader extends Component{
                             </ul>
                         </div>
                         <div className="header-btn">
-                            <a className="rn-btn" href="mailto:leokwok1997@hotmail.com">
-                                <span>Contact me now</span>
+                            <a className="rn-btn" href="https://drive.google.com/file/d/1PF-JBs14ESYVeciCWOTRZEUUaBE0cVYt/view?usp=sharing">
+                                <span>Get My Resume</span>
                             </a>
                         </div>
                         {/* Start Humberger Menu  */}

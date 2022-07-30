@@ -17,7 +17,7 @@ import BlogContent from "../elements/blog/BlogContent";
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Welcome to my World',
+        category: 'Welcome',
         description: '',
         buttonText: 'Contact me',
         buttonLink: 'mailto:leokwok1997@hotmail.com'
@@ -50,7 +50,7 @@ const PortfolioLanding = () => {
                                                 <span> Photographer.</span>
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h2>based in Syracuse, NY.</h2>
+                                            <h2>based in Syracuse, NY</h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
@@ -72,7 +72,7 @@ const PortfolioLanding = () => {
                             <div className="row row--35 align-items-center">
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
-                                        <img className="w-100" src="/assets/images/about/about-8.jpg" alt="About Images"/>
+                                        <img className="w-100" src="/assets/images/about/about-leo.jpg" alt="About Images"/>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">

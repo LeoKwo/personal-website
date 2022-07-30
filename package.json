@@ -2,7 +2,7 @@
   "name": "ruikangguo",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://leokwo.github.io/personal_website",
+  "homepage": "https://rguo.xyz",
   "basename": "/",
   "dependencies": {
     "@babel/core": "7.4.3",

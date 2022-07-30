@@ -15,7 +15,7 @@ const LeoFooter = () => {
                         <div className="inner">
                             <div className="logo text-center text-sm-left mb_sm--20">
                                 <a href="/">
-                                    <img src="/assets/images/logo/logo-leo-gray.png" alt="Logo images" width="45px" />
+                                    <img src="/assets/images/logo/rkguo.png" alt="Logo images" width="100px" />
                                 </a>
                             </div>
                         </div>
