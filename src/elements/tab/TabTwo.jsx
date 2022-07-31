@@ -6,7 +6,7 @@ class TabsTwo extends Component{
         let 
         tab1 = "Main skills",
         tab2 = "Education & Certification",
-        tab3 = "Experience";
+        tab3 = "Experiences";
         const { tabStyle } = this.props
         return(
             <div>
@@ -29,13 +29,22 @@ class TabsTwo extends Component{
                                                     Java, C++, Kotlin, Python, SQL, R
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Platform & Tool<span></span></a>
-                                                    Git, PowerBI, ArcGIS, Adobe CC Suite, Tableau, Firebase, Google Cloud Platform, NumPy, TensorFlow
+                                                    <a href="/service">Front-End Technology <span></span></a>
+                                                    ES6, React, Bootstrap, Redux.js, Node.js, Figma, LucidChart
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Web Technology <span></span></a>
-                                                    HTML, CSS, JavaScript, Figma, LucidChart, React, Bootstrap, Node.js, Redux.js, MongoDB
+                                                    <a href="/service">Back-End and Databases <span></span></a>
+                                                    Express.js, SprintBoot, Hibernate, MongoDB, MySQL
                                                 </li>
+                                                <li>
+                                                    <a href="/service">Platform & Tool<span></span></a>
+                                                    Git, Firebase, Google Cloud Platform, PowerBI, ArcGIS, Adobe CC Suite, Tableau, NumPy, TensorFlow
+                                                </li>
+                                                <div className="header-btn">
+                                                    <a className="rn-btn" href="https://drive.google.com/file/d/1PF-JBs14ESYVeciCWOTRZEUUaBE0cVYt/view?usp=sharing">
+                                                        <span>My Resume</span>
+                                                    </a>
+                                                </div>
                                             </ul>
                                         </div>
                                     </TabPanel>

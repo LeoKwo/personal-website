@@ -8,32 +8,17 @@ const ServiceList = [
     
     {
         icon: <FaReact />,
-        title: 'Website Development',
+        title: 'Front-End Development',
+        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+    },
+    {
+        icon: <SiSpring />,
+        title: 'Back-End Development',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     },
     {
         icon: <FaAndroid />,
-        title: 'Business Stratagy',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FaNodeJs />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <SiSpring />,
-        title: 'Mobile App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    {
-        icon: <FaDocker />,
-        title: 'Marketing & Reporting',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
-    },
-    { 
-        icon: <SiMongodb />,
-        title: 'Mobile App Development',
+        title: 'Android App Development',
         description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
     }
 ]
@@ -49,7 +34,7 @@ class ServiceThree extends Component{
                 <div className="row">
                     {ServiceContent.map( (val , i) => (
                         <div className={`${column}`} key={i}>
-                            <a href="/service-details">
+                            <a href={"/service-details-" + i}>
                                 <div className="service service__style--2">
                                     <div className="icon">
                                         {val.icon}

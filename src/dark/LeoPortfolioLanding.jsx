@@ -17,9 +17,9 @@ import BlogContent from "../elements/blog/BlogContent";
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Welcome',
+        category: 'Welcome to my hub on the net!',
         description: '',
-        buttonText: 'Contact me',
+        buttonText: 'Contact',
         buttonLink: 'mailto:leokwok1997@hotmail.com'
     }
 ]
@@ -47,7 +47,7 @@ const PortfolioLanding = () => {
                                                 <span> Web Developer.</span>
                                                 <span> Android Developer.</span>
                                                 <span> Backend Engineer.</span>
-                                                <span> Photographer.</span>
+                                                <span> Hobbyist Photographer.</span>
                                             </TextLoop>{" "}
                                             </h1>
                                             <h2>based in Syracuse, NY</h2>
@@ -108,7 +108,7 @@ const PortfolioLanding = () => {
                         </div>
                         <div className="row creative-service">
                             <div className="col-lg-12">
-                                <ServiceList item="6" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
+                                <ServiceList item="3" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
                             </div>
                         </div>
                     </div>
@@ -117,28 +117,28 @@ const PortfolioLanding = () => {
             {/* End Service Area  */} 
 
             {/* Start Portfolio Area */}
-            <div id="portfolio" className="fix">
+            <div id="project-blog" className="fix">
                 <div className="portfolio-area ptb--120 bg_color--1">
                     <div className="portfolio-sacousel-inner">
                         <div className="container">
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">My Latest Projects</h2>
-                                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.</p>
+                                        <h2 className="title">My Project Blogs</h2>
+                                        <p>I'd like to keep track of my learning process. They should provide you a sense of where I came from and where I am headed to next.</p>
                                     </div>
                                 </div>
                             </div>
                             <div className="row">
                                 <PortfolioList styevariation="text-center mt--40" column="col-lg-4 col-md-6 col-sm-6 col-12" item="6" />
                             </div>
-                            <div className="row">
+                            {/* <div className="row">
                                 <div className="col-lg-12">
                                     <div className="view-more-btn mt--60 mt_sm--30 text-center">
                                         <a className="rn-button-style--2 btn-solid" href="/blog"><span>View More</span></a>
                                     </div>
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
                     </div>
                 </div>

@@ -33,6 +33,9 @@ import LeoPortfolioLanding from './dark/LeoPortfolioLanding';
 
 // Element Layout
 import Service from "./elements/Service";
+import ServiceDetails0 from "./elements/ServiceDetails0.jsx";
+import ServiceDetails1 from "./elements/ServiceDetails1";
+import ServiceDetails2 from "./elements/ServiceDetails2";
 import ServiceDetails from "./elements/ServiceDetails";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
@@ -69,12 +72,14 @@ class Root extends Component{
                         
                         {/* Element Layot */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/> */}
-                        <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/> */}
-                        <Route exact path={`${process.env.PUBLIC_URL}/portfolio-details`} component={PortfolioDetails}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/>
+
+                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details`} component={PortfolioDetails}/>
+
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/> */}
 
                         {/* Blocks Elements  */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team}/> */}
@@ -82,14 +87,16 @@ class Root extends Component{
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/testimonial`} component={Testimonial}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={Portfolio}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/video-popup`} component={VideoPopup}/> */}
-                        <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/clint-logo`} component={Brand}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/progressbar`} component={ProgressBar}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/contact-form`} component={ContactForm}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/google-map`} component={GoogleMap}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/columns`} component={Columns}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}/> */}
-
+                        <Route exact path={`${process.env.PUBLIC_URL}/service-details-0`} component={ServiceDetails0}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/service-details-1`} component={ServiceDetails1}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/service-details-2`} component={ServiceDetails2}/>
 
                         
                         {/* <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/> */}

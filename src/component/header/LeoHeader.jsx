@@ -75,10 +75,10 @@ class LeoHeader extends Component{
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
                             <Scrollspy className="mainmenu" items={['home','about','service','portfolio']} currentClassName="is-current" offset={-200}>
-                                <li><a href="#home">Home</a></li>
-                                <li><a href="#about">About</a></li>
-                                <li><a href="#service">My Skillset</a></li>
-                                <li><a href="#portfolio">My Projects</a></li>
+                                <li><a href="/">Home</a></li>
+                                <li><a href="/#about">About</a></li>
+                                <li><a href="/#service">My Skillset</a></li>
+                                <li><a href="/#project-blog">My Projects</a></li>
                             </Scrollspy>
                         </nav>
                     </div>
@@ -90,11 +90,13 @@ class LeoHeader extends Component{
                                 ))}
                             </ul>
                         </div>
+                        { /*
                         <div className="header-btn">
                             <a className="rn-btn" href="https://drive.google.com/file/d/1PF-JBs14ESYVeciCWOTRZEUUaBE0cVYt/view?usp=sharing">
                                 <span>Get My Resume</span>
                             </a>
-                        </div>
+                        </div> */
+                        }
                         {/* Start Humberger Menu  */}
                         <div className="humberger-menu d-block d-lg-none pl--20">
                             <span onClick={this.menuTrigger} className="menutrigger text-white"><FiMenu /></span>

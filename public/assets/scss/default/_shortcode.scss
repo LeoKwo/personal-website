@@ -149,6 +149,11 @@ font-family: 'Maven Pro', sans-serif;
     }
 }
 
+.bg-front-end {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(/assets/images/bg/bg-image-5-0.jpg) !important;
+}
 
 
 @for $i from 1 through 80 {
