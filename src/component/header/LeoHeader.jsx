@@ -74,11 +74,12 @@ class LeoHeader extends Component{
                             </a>
                         </div>
                         <nav className="mainmenunav d-lg-block ml--50">
-                            <Scrollspy className="mainmenu" items={['home','about','service','portfolio']} currentClassName="is-current" offset={-200}>
+                            <Scrollspy className="mainmenu" items={['home','about','stack','project-blog', 'contact']} currentClassName="is-current" offset={-200}>
                                 <li><a href="/">Home</a></li>
                                 <li><a href="/#about">About</a></li>
-                                <li><a href="/#service">My Skillset</a></li>
+                                <li><a href="/#stack">My Tech Stack</a></li>
                                 <li><a href="/#project-blog">My Projects</a></li>
+                                <li><a href="/#contact">Contact</a></li>
                             </Scrollspy>
                         </nav>
                     </div>

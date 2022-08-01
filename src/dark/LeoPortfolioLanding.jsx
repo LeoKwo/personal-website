@@ -95,13 +95,13 @@ const PortfolioLanding = () => {
             {/* End About Area */}
 
             {/* Start Service Area  */}
-            <div id="service" className="fix">
+            <div id="stack" className="fix">
                 <div className="service-area creative-service-wrapper ptb--120 bg_color--5" >
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">My Skillset</h2>
+                                    <h2 className="title">My Tech Stack</h2>
                                     <p>I am always eager to learn and develop new skills.</p>
                                 </div>
                             </div>
@@ -183,11 +183,11 @@ const PortfolioLanding = () => {
             {/* End Blog Area */}
 
             {/* Start Contact Area */}
-            {/* <div id="contact" className="fix">
+            <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--1">
-                    <ContactThree contactImages="/assets/images/about/about-9.jpg" contactTitle="Hire Me." />
+                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="Hire Me." />
                 </div>
-            </div> */}
+            </div>
             {/* End COntact Area */}
 
             <LeoFooter />

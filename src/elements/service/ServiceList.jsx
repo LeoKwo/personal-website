@@ -3,23 +3,24 @@ import { FiCast , FiLayers , FiUsers , FiMonitor } from "react-icons/fi";
 import { AiOutlineAndroid } from "react-icons/ai";
 import { FaReact, FaAndroid, FaNodeJs, FaDocker } from "react-icons/fa";
 import { SiRedux, SiSpring, SiMongodb } from "react-icons/si";
+import { GrAndroid } from "react-icons/gr";
 
 const ServiceList = [
     
     {
         icon: <FaReact />,
         title: 'Front-End Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'I mostly use React for front-end development. JSX is my primary template language. I am also familiar with Bootstrap, Ant Design, and Less CSS.'
     },
     {
         icon: <SiSpring />,
         title: 'Back-End Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'Java is my primary programming language. For backend, my technology stack includes SpringBoot, Hibernate, and Rest APIs.'
     },
     {
-        icon: <FaAndroid />,
+        icon: <GrAndroid />,
         title: 'Android App Development',
-        description: 'I throw myself down among the tall grass by the stream as I lie close to the earth.'
+        description: 'I really enjoyed my past experience building an Android App. Kotlin was my language of choice.'
     }
 ]
 
@@ -34,7 +35,8 @@ class ServiceThree extends Component{
                 <div className="row">
                     {ServiceContent.map( (val , i) => (
                         <div className={`${column}`} key={i}>
-                            <a href={"/service-details-" + i}>
+                            {/* <a href={"/service-details-" + i}> */}
+                            <a href={"#stack"}>
                                 <div className="service service__style--2">
                                     <div className="icon">
                                         {val.icon}

@@ -21,9 +21,14 @@ class ContactThree extends Component{
                             <div className="section-title text-left mb--50">
                                 <h2 className="title">{this.props.contactTitle}</h2>
                                 <p className="description">I am available for full-time job opportunities. Connect with me via phone: <a href="tel:+12064037493">+1 2064037493</a> or email:
-                                    <a href="mailto:leokwok1997@hotmail.com"> leokwok1997@hotmail.com</a> </p>
+                                    <a href="mailto:leokwok1997@hotmail.com"> leokwok1997@hotmail.com</a> 
+                                </p>
+                                
                             </div>
-                            <div className="form-wrapper">
+                            <img src={`${this.props.contactImages}`} alt="image"/>
+                            {/* <img src={`${this.props.contactImages}`} alt="image"/> */}
+                            {/* <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYyDqUqh_mBQJsFAO0wXXotBCY5Eng2O79HU90gFiAmB_JUg/viewform?embedded=true" width="640" height="844" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> */}
+                            {/* <div className="form-wrapper">
                                 <form>
                                     <label htmlFor="item01">
                                         <input
@@ -69,11 +74,12 @@ class ContactThree extends Component{
                                     </label>
                                     <button className="rn-button-style--2 btn-solid" type="submit" value="submit" name="submit" id="mc-embedded-subscribe">Submit</button>
                                 </form>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="col-lg-6 order-1 order-lg-2">
-                            <div className="thumbnail mb_md--30 mb_sm--30">
-                                <img src={`${this.props.contactImages}`} alt="image"/>
+                            <div className="thumbnail mb_md--30 mb_sm--30" style={{background: "#c6c9d8", borderRadius: "12px", display: "flex", justifyContent: "center", alignItems: "center", height: "700px"}}>
+                                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeYyDqUqh_mBQJsFAO0wXXotBCY5Eng2O79HU90gFiAmB_JUg/viewform?embedded=true" width="95%" height="95%" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+                                {/* <img src={`${this.props.contactImages}`} alt="image"/> */}
                             </div>
                         </div>
                     </div>
