@@ -23,7 +23,6 @@ class ContactThree extends Component{
                                 <p className="description">I am available for full-time job opportunities. Connect with me via phone: <a href="tel:+12064037493">+1 2064037493</a> or email:
                                     <a href="mailto:leokwok1997@hotmail.com"> leokwok1997@hotmail.com</a> 
                                 </p>
-                                
                             </div>
                             <img src={`${this.props.contactImages}`} alt="image"/>
                             {/* <img src={`${this.props.contactImages}`} alt="image"/> */}
