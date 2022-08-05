@@ -40,10 +40,14 @@ class TabsTwo extends Component{
                                                     <a href="/service">Platform & Tool<span></span></a>
                                                     Git, Firebase, Google Cloud Platform, PowerBI, ArcGIS, Adobe CC Suite, Tableau, NumPy, TensorFlow
                                                 </li>
-                                                <div className="header-btn">
-                                                    <a className="rn-btn" href="https://drive.google.com/file/d/1PF-JBs14ESYVeciCWOTRZEUUaBE0cVYt/view?usp=sharing">
-                                                        <span>My Resume</span>
-                                                    </a>
+                                                <div className="row">
+                                                    <div className="col-lg-12">
+                                                        <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1PF-JBs14ESYVeciCWOTRZEUUaBE0cVYt/view?usp=sharing">
+                                                                <span>Get my Resume</span>
+                                                            </a>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </ul>
                                         </div>

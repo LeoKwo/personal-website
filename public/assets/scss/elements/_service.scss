@@ -294,21 +294,80 @@
 /* Creative Agency Service  */
 .creative-service-wrapper {
     .row {
+        height: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        padding: 0;
+        div {
+            margin-top: 10px;
+        }
         &.creative-service {
-            a{
+            
+            button {
                 display: flex;
+                border: none;
                 height: 100%;
+                text-align: left !important;
+                padding: 0;
+                margin:0;
             }
             .service {
-
                 &.service__style--2 {
-                    margin-top: 30px;
+                    height: 100%;
                     background: #f6f6f6;
                 }
             }
         }
     }
     
+}
+
+.ReactModal__Overlay {
+    z-index: 1000;
+    background-color: #141414 !important;
+    
+    .tech-stack-modal {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        overflow: scroll;
+
+        .modal-wrapper {
+            padding: 50px 0px 50px 0px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: auto;
+            margin-bottom: auto;
+            display: flex;
+            flex-direction: column;
+            h2 {
+                color: #ffffff;
+            }
+            color: #C6C9D8BF;
+            .tech-wrapper {
+                h3 {
+                    color: #ffffff;
+                }
+
+                h4 {
+                    color: #ffffff;
+                }
+
+                .tech-list {
+                    color: #C6C9D8BF;
+                }
+                margin-bottom: 25px;
+            }
+            svg {
+                width: 30px;
+                height: 30px;
+                align-self: center;
+                color: #C6C9D8BF;
+                cursor: pointer;
+            }
+        }
+        
+    }
 }
 
 
