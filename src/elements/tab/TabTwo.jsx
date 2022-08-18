@@ -30,20 +30,20 @@ class TabsTwo extends Component{
                                                 </li>
                                                 <li>
                                                     <a href="/service">Front-End Technology <span></span></a>
-                                                    ES6, React, Bootstrap, Redux.js, Node.js, Figma, LucidChart
+                                                    ES6 JS, React, Bootstrap, Redux.js, Node.js, Figma, LucidChart
                                                 </li>
                                                 <li>
                                                     <a href="/service">Back-End and Databases <span></span></a>
-                                                    Express.js, SprintBoot, Hibernate, MongoDB, MySQL
+                                                    Express.js, Spring Boot, Hibernate, MongoDB, MySQL
                                                 </li>
                                                 <li>
                                                     <a href="/service">Platform & Tool<span></span></a>
-                                                    Git, Firebase, Google Cloud Platform, PowerBI, ArcGIS, Adobe CC Suite, Tableau, NumPy, TensorFlow
+                                                    Git, Maven, Gradle, Docker, Firebase, Google Cloud Platform, Figma, Tableau
                                                 </li>
                                                 <div className="row">
                                                     <div className="col-lg-12">
                                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1PF-JBs14ESYVeciCWOTRZEUUaBE0cVYt/view?usp=sharing">
+                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1naSK_SITfiCmrgWEG-BYGMtVgoyMIQSZ/view?usp=sharing">
                                                                 <span>Get my Resume</span>
                                                             </a>
                                                         </div>

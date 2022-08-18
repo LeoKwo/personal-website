@@ -1,9 +1,10 @@
 import React from 'react';
-import {FaTwitter ,FaInstagram ,FaFacebookF , FaLinkedinIn} from "react-icons/fa";
+import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 
 const SocialShare = [
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
+    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'}
 ]
 
 const LeoFooter = () => {

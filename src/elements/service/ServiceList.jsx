@@ -78,7 +78,7 @@ class ServiceThree extends Component{
                     <Modal className="tech-stack-modal" isOpen={this.state.isOpen} onClose={() => this.setState({isOpen: false})}>
                         <div className="modal-wrapper">
                             <h2>My Tech Stack</h2>
-                            <p>Last updated on Aug 5th, 2022</p>
+                            <p>Last updated on Aug 18th, 2022</p>
                             <div className="tech-wrapper">
                                 <h3>Front-end technology</h3>
                                 <h4>Languages</h4>
@@ -109,7 +109,8 @@ class ServiceThree extends Component{
                                     <li>Node.js</li>
                                     <li>Express.js</li>
                                     <li>MongoDB</li>
-                                    <li>MySql</li>
+                                    <li>MySQL</li>
+                                    <li>Docker</li>
                                 </ul>
                             </div>
                             <div className="tech-wrapper">
