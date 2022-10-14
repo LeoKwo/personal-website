@@ -63,7 +63,27 @@
         transition: transform .28s ease;
         z-index: 4;
         &.image-1{
+            // background-image: url(/assets/images/portfolio/wavelength.jpeg);
+
             background-image: url(/assets/images/portfolio/portfolio-1.jpg);
+        }
+
+        &.image-wavelength{
+            background-image: url(/assets/images/portfolio/wavelength.png);
+
+            // background-image: url(/assets/images/portfolio/portfolio-1.jpg);
+        }
+
+        &.image-student-management-sys{
+            background-image: url(/assets/images/portfolio/student_management_sys.png);
+
+            // background-image: url(/assets/images/portfolio/portfolio-1.jpg);
+        }
+
+        &.image-exercise-track{
+            background-image: url(/assets/images/portfolio/exercise-track.webp);
+
+            // background-image: url(/assets/images/portfolio/portfolio-1.jpg);
         }
 
         &.image-2{

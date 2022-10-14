@@ -43,7 +43,7 @@ class TabsTwo extends Component{
                                                 <div className="row">
                                                     <div className="col-lg-12">
                                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1naSK_SITfiCmrgWEG-BYGMtVgoyMIQSZ/view?usp=sharing">
+                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1rXbrHh4V5STctQuv77maIHXZIjYn-xUq/view?usp=sharing">
                                                                 <span>Get my Resume</span>
                                                             </a>
                                                         </div>

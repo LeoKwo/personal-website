@@ -40,6 +40,11 @@ import ServiceDetails from "./elements/ServiceDetails";
 import About from "./elements/About";
 import Contact from "./elements/Contact";
 import PortfolioDetails from "./elements/PortfolioDetails";
+import PortfolioDetailsWavelength from "./elements/PortfolioDetailsWavelength";
+import PortfolioDetailsMern from "./elements/PortfolioDetailsMern";
+import PortfolioDetailsStudent from "./elements/PortfolioDetailsStudent";
+
+
 import Blog from "./elements/Blog";
 import BlogDetails from "./elements/BlogDetails";
 import error404 from "./elements/error404";
@@ -76,7 +81,12 @@ class Root extends Component{
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/> */}
 
-                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details`} component={PortfolioDetails}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-wavelength`} component={PortfolioDetailsWavelength}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-mern`} component={PortfolioDetailsMern}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-student`} component={PortfolioDetailsStudent}/>
+
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details`} component={PortfolioDetails}/> */}
+
 
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/> */}
