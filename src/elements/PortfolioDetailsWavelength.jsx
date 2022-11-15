@@ -69,6 +69,7 @@ class PortfolioDetailsWavelength extends Component{
                                                 <h4>Kotlin</h4>
                                                 <h5>Retrofit</h5>
                                                 <h5>Coil</h5>
+                                                <h5>Wasabeef Animations</h5>
                                                 <h5>Glide</h5>
                                                 <h5>Coroutines</h5>
                                                 <h5>Android Studio</h5>
@@ -88,6 +89,12 @@ class PortfolioDetailsWavelength extends Component{
                                                 <h4>MongoDB</h4>
                                                 <h5>MongoDB Atlas</h5>
                                                 <h4>Digital Ocean Spaces</h4>
+                                                <h5>Amazon S3</h5>
+                                            </div>
+
+                                            <div className="port-view">
+                                                <span>Deployment</span>
+                                                <h4>Heroku</h4>
                                             </div>
                                         </div>
 
@@ -115,13 +122,16 @@ class PortfolioDetailsWavelength extends Component{
                                         <p>Favorite/unfavorite songs</p>
                                         <p>Display song album, artist, song name</p>
                                         <p>Render song album art</p>
-
-                                        <h3>Features Planned</h3>
-
                                         <p>Search songs within library</p>
-                                        <p>Add songs to custom playlist</p>
+                                        <p>Create and delete custom playlists</p>
+                                        <p>Add/remove songs to custom playlist with custom images</p>
+                                        <p>Deployed backend application to Heroku</p>
+
+                                        <h3>Future Features</h3>
+
                                         <p>Upload your own music to the library</p>
-                                        <p>Deploy backend application to the cloud, possibly AWS</p>
+                                        <p>General application preferences settings</p>
+                                        <p>Lyric support</p>
 
 
                                         {/* <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
