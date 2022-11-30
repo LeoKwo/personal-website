@@ -13,7 +13,7 @@ const SocialShare = [
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
 ]
 
-const GitHubLink = 
+const GitHubLink =
     {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/wavelength'}
 
 class PortfolioDetailsWavelength extends Component{
@@ -36,7 +36,7 @@ class PortfolioDetailsWavelength extends Component{
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
                 <LeoHeader2 logo="symbol-dark" />
-                
+
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7">
                     <div className="container">
@@ -81,6 +81,7 @@ class PortfolioDetailsWavelength extends Component{
                                                 <h4>Java 11</h4>
                                                 <h5>Mongo Java Driver</h5>
                                                 <h5>IntelliJ</h5>
+                                                <h4>Firebase Authentication</h4>
 
                                             </div>
 
@@ -105,7 +106,7 @@ class PortfolioDetailsWavelength extends Component{
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
-                                                
+
                                                 <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Wavelength</li>
                                                 {
                                                 // SocialShare.map((val , i) => (
@@ -126,17 +127,18 @@ class PortfolioDetailsWavelength extends Component{
                                         <p>Create and delete custom playlists</p>
                                         <p>Add/remove songs to custom playlist with custom images</p>
                                         <p>Deployed backend application to Heroku</p>
+                                        <p>Create accounts and login to existing accounts</p>
+                                        <p>General application preferences settings</p>
 
-                                        <h3>Future Features</h3>
+                                        <h3>Potential Future Features</h3>
 
                                         <p>Upload your own music to the library</p>
-                                        <p>General application preferences settings</p>
                                         <p>Lyric support</p>
 
 
                                         {/* <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
-                                                
+
                                                 <li></li>
                                                 <li>da</li>
 
@@ -155,7 +157,7 @@ class PortfolioDetailsWavelength extends Component{
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
                                             <button className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
                                         </div>
-                                        
+
                                         <div className="thumb mb--30">
                                             <img src="/assets/images/portfolio/portfolio-big-02.jpg" alt="Portfolio Images"/>
                                         </div>
@@ -225,8 +227,8 @@ class PortfolioDetailsWavelength extends Component{
                     </ScrollToTop>
                 </div>
                 {/* End Back To Top */}
-                
-                <LeoFooter />  
+
+                <LeoFooter />
 
 
             </React.Fragment>
