@@ -30,7 +30,7 @@ class TabsTwo extends Component{
                                                 </li>
                                                 <li>
                                                     <a href="/service">Front-End Technology <span></span></a>
-                                                    ES6 JS, React, Bootstrap, Redux.js, Node.js, Figma, LucidChart
+                                                    ES6 JS, React, Bootstrap, Redux.js, Node.js, Retrofit, Glide
                                                 </li>
                                                 <li>
                                                     <a href="/service">Back-End and Databases <span></span></a>
@@ -38,12 +38,12 @@ class TabsTwo extends Component{
                                                 </li>
                                                 <li>
                                                     <a href="/service">Platform & Tool<span></span></a>
-                                                    Git, Maven, Gradle, Docker, Firebase, Google Cloud Platform, Figma, Tableau
+                                                    Git, Maven, Gradle, Docker, Firebase, Heroku, Digital Ocean, Figma, Tableau
                                                 </li>
                                                 <div className="row">
                                                     <div className="col-lg-12">
                                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1rXbrHh4V5STctQuv77maIHXZIjYn-xUq/view?usp=sharing">
+                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1L0yE5tx_uMOYAn73LkfZwU4cYhTHknz2/view?usp=sharing">
                                                                 <span>Get my Resume</span>
                                                             </a>
                                                         </div>
@@ -57,7 +57,7 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">M.S. In Computer Science<span> - Syracuse University, Syracuse, NY</span></a> Jun 2023
+                                                   <a href="/service">M.S. In Computer Science<span> - Syracuse University, Syracuse, NY</span></a> May 2023
                                                </li>
                                                <li>
                                                    <a href="/service">B.A. Geography: Data Science w/ Minor In Informatics<span> - University of Washington, Seattle, WA</span></a> Jun 2021

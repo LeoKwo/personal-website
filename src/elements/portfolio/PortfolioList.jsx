@@ -4,7 +4,7 @@ import {Link} from "react-router-dom";
 const PortfolioListContent = [
     {
         image: 'image-wavelength',
-        category: 'Kotlin + Spring Boot + MongoDB',
+        category: 'Kotlin + Spring Boot + MongoDB + Digital Ocean + Firebase Authentication',
         title: 'Wavelength'
     },
     {
@@ -14,7 +14,7 @@ const PortfolioListContent = [
     },
     {
         image: 'image-exercise-track',
-        category: 'MERN Stack',
+        category: 'MongoDB + Express.js + React + Node.js',
         title: 'Exercise Tracker Web App'
     }
 ]

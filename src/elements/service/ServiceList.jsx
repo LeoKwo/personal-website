@@ -78,7 +78,7 @@ class ServiceThree extends Component{
                     <Modal className="tech-stack-modal" isOpen={this.state.isOpen} onClose={() => this.setState({isOpen: false})}>
                         <div className="modal-wrapper">
                             <h2>My Tech Stack</h2>
-                            <p>Last updated on Aug 18th, 2022</p>
+                            <p>Last updated on Jan 4th, 2023</p>
                             <div className="tech-wrapper">
                                 <h3>Front-end technology</h3>
                                 <h4>Languages</h4>
@@ -105,12 +105,15 @@ class ServiceThree extends Component{
                                 </ul>
                                 <h4>Frameworks and packages</h4>
                                 <ul className="tech-list">
-                                    <li>SpringBoot</li>
+                                    <li>Spring Boot</li>
                                     <li>Node.js</li>
                                     <li>Express.js</li>
                                     <li>MongoDB</li>
                                     <li>MySQL</li>
                                     <li>Docker</li>
+                                    <li>Digital Ocean</li>
+                                    <li>Firebase</li>
+                                    <li>Heroku</li>
                                 </ul>
                             </div>
                             <div className="tech-wrapper">
@@ -118,6 +121,10 @@ class ServiceThree extends Component{
                                 <h4>Languages</h4>
                                 <ul className="tech-list">
                                     <li>Kotlin</li>
+                                </ul>
+                                <h4>Frameworks and packages</h4>
+                                <ul className="tech-list">
+                                    <li>Retrofit</li>
                                 </ul>
                             </div>
                         

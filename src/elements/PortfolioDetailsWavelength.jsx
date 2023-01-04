@@ -108,11 +108,7 @@ class PortfolioDetailsWavelength extends Component{
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
 
                                                 <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Wavelength</li>
-                                                {
-                                                // SocialShare.map((val , i) => (
-                                                //     <li key={i}><a href={`${val.link}`}>{val.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Check out</li>
-                                                // ))
-                                                }
+                                                
                                             </ul>
                                         </div>
 
@@ -135,6 +131,37 @@ class PortfolioDetailsWavelength extends Component{
                                         <p>Upload your own music to the library</p>
                                         <p>Lyric support</p>
 
+                                        <h3>Screenshots</h3>
+
+                                        <div className="portfolio-view-list d-flex flex-wrap">
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-1.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-2.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-3.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-4.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-5.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-6.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-7.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-8.png" width={"250em"}></img>
+                                            </div>
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/wavelength-9.png" width={"250em"}></img>
+                                            </div>
+                                        </div>
 
                                         {/* <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
