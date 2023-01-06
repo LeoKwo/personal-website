@@ -13,6 +13,7 @@ import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const SlideList = [
     {
@@ -193,6 +194,48 @@ const PortfolioLanding = () => {
                 </div>
             </div>
             {/* End COntact Area */}
+
+            <div id="blog" className="fix">
+                <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
+                    <div className="container">
+                        <div className="row align-items-end">
+                            <div className="col-lg-12 col-md-12 col-sm-12 col-12">
+                                <div className="section-title text-center">
+                                    <h2>Like my page?</h2>
+                                    <p>Help me improve it.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div className="row mt--60 mt_sm--40">
+                            <div className="col-lg-12">
+                                <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                    <a className="rn-button-style--2 rn-btn-small" href="https://drive.google.com/file/d/1L0yE5tx_uMOYAn73LkfZwU4cYhTHknz2/view?usp=sharing">
+                                        <span>Visit Repository on GitHub</span>
+                                    </a>
+                                </div>
+                            </div>
+                            {/* {PostList.map((value , i ) => (
+                                <div className="col-lg-4 col-md-6 col-12" key={i}>
+                                    <div className="blog blog-style--1">
+                                        <div className="thumbnail">
+                                            <a href="/blog-details">
+                                                <img className="w-100" src={`/assets/images/blog/blog-${value.images}.jpg`} alt="Blog Images"/>
+                                            </a>
+                                        </div>
+                                        <div className="content">
+                                            <p className="blogtype">{value.category}</p>
+                                            <h4 className="title"><a href="/blog-details">{value.title}</a></h4>
+                                            <div className="blog-btn">
+                                                <a className="rn-btn text-white" href="/blog-details">Read More</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            ))} */}
+                        </div>    
+                    </div>    
+                </div>
+            </div>
 
             <LeoFooter />
             {/* Start Back To Top */}
