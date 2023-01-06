@@ -209,7 +209,7 @@ const PortfolioLanding = () => {
                         <div className="row mt--60 mt_sm--40">
                             <div className="col-lg-12">
                                 <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                    <a className="rn-button-style--2 rn-btn-small" href="https://drive.google.com/file/d/1L0yE5tx_uMOYAn73LkfZwU4cYhTHknz2/view?usp=sharing">
+                                    <a className="rn-button-style--2 rn-btn-small" href="https://github.com/LeoKwo/personal-website">
                                         <span>Visit Repository on GitHub</span>
                                     </a>
                                 </div>
