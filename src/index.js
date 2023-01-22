@@ -32,40 +32,42 @@ import PageScrollTop from './component/PageScrollTop';
 import LeoPortfolioLanding from './dark/LeoPortfolioLanding';
 
 // Element Layout
-import Service from "./elements/Service";
-import ServiceDetails0 from "./elements/ServiceDetails0.jsx";
-import ServiceDetails1 from "./elements/ServiceDetails1";
-import ServiceDetails2 from "./elements/ServiceDetails2";
-import ServiceDetails from "./elements/ServiceDetails";
-import About from "./elements/About";
-import Contact from "./elements/Contact";
-import PortfolioDetails from "./elements/PortfolioDetails";
+// import Service from "./elements/Service";
+// import ServiceDetails0 from "./elements/ServiceDetails0.jsx";
+// import ServiceDetails1 from "./elements/ServiceDetails1";
+// import ServiceDetails2 from "./elements/ServiceDetails2";
+// import ServiceDetails from "./elements/ServiceDetails";
+// import About from "./elements/About";
+// import Contact from "./elements/Contact";
+// import PortfolioDetails from "./elements/PortfolioDetails";
 import PortfolioDetailsWavelength from "./elements/PortfolioDetailsWavelength";
 import PortfolioDetailsMern from "./elements/PortfolioDetailsMern";
 import PortfolioDetailsStudent from "./elements/PortfolioDetailsStudent";
+import PortfolioDetailsPhotography from "./elements/PortfolioDetailsPhotography";
 
 
-import Blog from "./elements/Blog";
-import BlogDetails from "./elements/BlogDetails";
-import error404 from "./elements/error404";
+// import Blog from "./elements/Blog";
+// import BlogDetails from "./elements/BlogDetails";
+// import error404 from "./elements/error404";
 
 
 // Blocks Layout
 
-import Team from "./blocks/Team";
-import Counters from "./blocks/Counters";
-import Testimonial from "./blocks/Testimonial";
-import Portfolio from "./blocks/Portfolio";
-import VideoPopup from "./blocks/VideoPopup";
-import Gallery from "./blocks/Gallery";
-import Brand from "./blocks/Brand";
-import ProgressBar from "./blocks/ProgressBar";
-import ContactForm from "./blocks/ContactForm";
-import GoogleMap from "./blocks/GoogleMap";
-import Columns from "./blocks/Columns";
-import PricingTable from "./blocks/PricingTable";
+// import Team from "./blocks/Team";
+// import Counters from "./blocks/Counters";
+// import Testimonial from "./blocks/Testimonial";
+// import Portfolio from "./blocks/Portfolio";
+// import VideoPopup from "./blocks/VideoPopup";
+// import Gallery from "./blocks/Gallery";
+// import Brand from "./blocks/Brand";
+// import ProgressBar from "./blocks/ProgressBar";
+// import ContactForm from "./blocks/ContactForm";
+// import GoogleMap from "./blocks/GoogleMap";
+// import Columns from "./blocks/Columns";
+// import PricingTable from "./blocks/PricingTable";
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
+// import HomePortfolio from './home/HomePortfolio';
 
 class Root extends Component{
     render(){
@@ -104,13 +106,15 @@ class Root extends Component{
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/google-map`} component={GoogleMap}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/columns`} component={Columns}/> */}
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}/> */}
-                        <Route exact path={`${process.env.PUBLIC_URL}/service-details-0`} component={ServiceDetails0}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/service-details-1`} component={ServiceDetails1}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/service-details-2`} component={ServiceDetails2}/>
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details-0`} component={ServiceDetails0}/> */}
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details-1`} component={ServiceDetails1}/> */}
+                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details-2`} component={ServiceDetails2}/> */}
 
                         
                         {/* <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/> */}
                         {/* <Route component={error404}/> */}
+
+                        <Route exact path={`${process.env.PUBLIC_URL}/photography`} component={PortfolioDetailsPhotography}/>]
 
                     </Switch>
                 </PageScrollTop>

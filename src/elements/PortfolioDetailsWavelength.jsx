@@ -38,7 +38,9 @@ class PortfolioDetailsWavelength extends Component{
                 <LeoHeader2 logo="symbol-dark" />
 
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7">
+                <div className="rn-page-title-area pt--120 pb--190 bg-wavelength"  data-black-overlay="4">
+
+                {/* <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7"> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
