@@ -14,6 +14,7 @@ import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import Chatbot from '../component/chatbot/chatbot';
 
 const SlideList = [
     {
@@ -236,6 +237,8 @@ const PortfolioLanding = () => {
                     </div>    
                 </div>
             </div>
+
+            <Chatbot />
 
             <LeoFooter />
             {/* Start Back To Top */}

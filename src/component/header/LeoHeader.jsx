@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { FaInstagram , FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaInstagram , FaLinkedinIn, FaGithub, FaLink } from "react-icons/fa";
 import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 import './header.css'
@@ -81,7 +81,7 @@ class LeoHeader extends Component{
                                 <li><a href="/#stack">My Tech Stack</a></li>
                                 <li><a href="/#project-blog">My Projects</a></li>
                                 <li><a href="/#contact">Contact</a></li>
-                                <li><a href="/photography">Photography</a></li>
+                                <li><a href="/photography">Photography <FaLink/></a></li>
                             </Scrollspy>
                         </nav>
                     </div>
