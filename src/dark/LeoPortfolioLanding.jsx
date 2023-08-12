@@ -18,7 +18,7 @@ import Chatbot from '../component/chatbot/chatbot';
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Greeting to those who traverse the digital realm as unfamiliar visitors!',
+        category: 'Greeting to those who traverse the digital realm!',
         description: '',
         buttonText: 'Contact',
         buttonLink: 'mailto:leokwok1997@hotmail.com'
