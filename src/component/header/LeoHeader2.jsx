@@ -1,13 +1,14 @@
 import React, { Component } from "react";
-import { FaInstagram , FaLinkedinIn, FaGithub, FaLink } from "react-icons/fa";
+import { FaInstagram , FaLinkedinIn, FaGithub, FaMedium, FaLink } from "react-icons/fa";
 import { FiX , FiMenu} from "react-icons/fi";
 import Scrollspy from 'react-scrollspy'
 import './header.css'
 
 const SocialShare = [
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
-    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo'},
     {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
+    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo'},
+    {Social: <FaMedium /> , link: 'https://medium.com/@rkguo/'},
+    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
 ]
 class LeoHeader2 extends Component{
     constructor(props) {

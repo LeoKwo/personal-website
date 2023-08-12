@@ -344,19 +344,27 @@
                 color: #ffffff;
             }
             color: #C6C9D8BF;
-            .tech-wrapper {
-                h3 {
-                    color: #ffffff;
-                }
+            .tech-wrap-around {
+                // display: flex;
+                // flex-direction: row;
+                // overflow: scroll;
+                .tech-wrapper {
+                    h3 {
+                        color: #ffffff;
+                    }
 
-                h4 {
-                    color: #ffffff;
-                }
+                    h4 {
+                        color: #ffffff;
+                    }
 
-                .tech-list {
-                    color: #C6C9D8BF;
+                    .tech-list {
+                        color: #C6C9D8BF;
+                    }
+                    display: flex;
+                    flex-direction: column;
+                    // margin-bottom: 25px;
+                    margin: 25px;
                 }
-                margin-bottom: 25px;
             }
             svg {
                 width: 30px;

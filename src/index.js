@@ -43,6 +43,7 @@ import LeoPortfolioLanding from './dark/LeoPortfolioLanding';
 import PortfolioDetailsWavelength from "./elements/PortfolioDetailsWavelength";
 import PortfolioDetailsMern from "./elements/PortfolioDetailsMern";
 import PortfolioDetailsStudent from "./elements/PortfolioDetailsStudent";
+import PortfolioDetailsChatbot  from './elements/PortfolioDetailsChatbot';
 import PortfolioDetailsPhotography from "./elements/PortfolioDetailsPhotography";
 
 
@@ -86,6 +87,7 @@ class Root extends Component{
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-wavelength`} component={PortfolioDetailsWavelength}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-mern`} component={PortfolioDetailsMern}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-student`} component={PortfolioDetailsStudent}/>
+                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-chatbot`} component={PortfolioDetailsChatbot}/>
 
                         {/* <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details`} component={PortfolioDetails}/> */}
 

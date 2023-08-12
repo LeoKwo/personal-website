@@ -13,13 +13,12 @@ import ContactThree from "../elements/contact/ContactThree";
 import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import BlogContent from "../elements/blog/BlogContent";
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 import Chatbot from '../component/chatbot/chatbot';
 
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Welcome to my hub on the net!',
+        category: 'Greeting to those who traverse the digital realm as unfamiliar visitors!',
         description: '',
         buttonText: 'Contact',
         buttonLink: 'mailto:leokwok1997@hotmail.com'
@@ -27,8 +26,8 @@ const SlideList = [
 ]
 const PortfolioLanding = () => {
     let title = 'About Me',
-        description = 'Hello, I am a MSCS student from Syracuse University, graduating in June 2023. I am looking for every opportunity to learn, create, and work.';
-    const PostList = BlogContent.slice(0 , 3);
+        description = 'I am a full-stack software engineer at Day & Nite All Service. I am looking for every opportunity to learn, create, and work.';
+    // const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
             <Helmet pageTitle="Ruikang Guo" />
@@ -44,15 +43,16 @@ const PortfolioLanding = () => {
                                     <div className="col-lg-12">
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
-                                            <h1 className="title">Hi, I’m Ruikang Guo <br/>
+                                            <h1 className="title"><span role='img'>&#x1F44B;</span> I’m Ruikang Guo <br/>
                                             <TextLoop>
                                                 <span> Web Developer.</span>
                                                 <span> Android Developer.</span>
                                                 <span> Backend Engineer.</span>
-                                                <span> Hobbyist Photographer.</span>
+                                                <span> GenAI Futurist.</span>
+                                                <span> Photographer.</span>
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h2>based in Syracuse, NY</h2>
+                                            <h2>based in Long Island, NY</h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
@@ -75,6 +75,11 @@ const PortfolioLanding = () => {
                                 <div className="col-lg-5">
                                     <div className="thumbnail">
                                         <img className="w-100" src="/assets/images/about/about-leo.jpg" alt="About Images"/>
+                                        <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/17wL6uq284y825XaQH5IY1P9HGzZLaF6t/view?usp=sharing">
+                                                <span>View Resume</span>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="col-lg-7">
@@ -84,6 +89,7 @@ const PortfolioLanding = () => {
                                             <p className="description">{description}</p>
                                         </div>
                                         <div className="row mt--30">
+                                            
                                             <TabTwo tabStyle="tab-style--1" />
                                         </div>
                                     </div>
@@ -191,7 +197,7 @@ const PortfolioLanding = () => {
             {/* Start Contact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--0">
-                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="Hire Me." />
+                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="Let's connect." />
                 </div>
             </div>
             {/* End COntact Area */}

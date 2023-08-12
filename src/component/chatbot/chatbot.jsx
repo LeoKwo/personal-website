@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { FaComment, FaTimes } from "react-icons/fa";
 import axios from 'axios';
 import './chatbot.scss';
@@ -41,29 +40,7 @@ const Chatbot = () => {
         setExpanded(!expanded);
     };
   
-    // <div id="blog" className="fix">
-    //             <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
-    //                 <div className="container">
-    //                     <div className="row align-items-end">
-    //                         <div className="col-lg-12 col-md-12 col-sm-12 col-12">
-    //                             <div className="section-title text-center">
-
-    //                             </div>
     return (
-        // <div className="chatbot-container">
-        //     <div className="chatbot-messages">
-        //         {messages.map((message, index) => (
-        //             <div key={index} className={`message ${message.sender}`}>
-        //                 {message.text}
-        //             </div>
-        //         ))}
-        //     </div>
-        //     <form className="chatbot-form" onSubmit={handleSubmit}>
-        //         <input className="chatbot-form-input" type="text" value={inputValue} onChange={handleChange} placeholder='Ask me anything about Ruikang Guo' />
-        //         <button className="chatbot-form-button rn-button-style--2 btn-solid" type="submit">Ask Chatbot</button>
-        //     </form>
-        //     {isLoading && <div className="loading-indicator">Thinking...</div>}
-        // </div>
 
         <div className="chatbot-container">
             {!expanded && 
@@ -79,7 +56,7 @@ const Chatbot = () => {
                     </div>
                     
                     <div className="chatbot-messages">
-                        <div className="message bot">I am a Chatbot powered by GPT 3. To learn more, visit my repo <a href='https://github.com/LeoKwo/chatbot_rkguo'>https://github.com/LeoKwo/chatbot_rkguo</a>.</div>
+                        <div className="message bot">I am a Chatbot powered by GPT 3. To learn more, visit my <a className="chatbot-repo-link" href='https://github.com/LeoKwo/chatbot_rkguo'>repo</a>.</div>
                         {messages.map((message, index) => (
                             <div key={index} className={`message ${message.sender}`}>
                                 {message.text}
@@ -88,6 +65,7 @@ const Chatbot = () => {
                     </div>
                     <form className="chatbot-form" onSubmit={handleSubmit}>
                         <input className="chatbot-form-input" type="text" value={inputValue} onChange={handleChange} placeholder='Ask me about Ruikang Guo' />
+                        
                         <button className="chatbot-form-button rn-button-style--2 btn-solid" type="submit">Ask Chatbot</button>
                     </form>
                     {isLoading && <div className="loading-indicator">Thinking...</div>}

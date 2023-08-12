@@ -16,6 +16,11 @@ const PortfolioListContent = [
         image: 'image-exercise-track',
         category: 'MongoDB + Express.js + React + Node.js',
         title: 'Exercise Tracker Web App'
+    },
+    {
+        image: 'image-chatbot',
+        category: 'GenAI + Cloud Computing',
+        title: 'Chatbot for rkguo.xyz'
     }
 ]
 
@@ -25,6 +30,26 @@ class PortfolioList extends Component{
         const list = PortfolioListContent.slice(0 , this.props.item);
         return(
             <React.Fragment> 
+                {
+                    <div className={`${column}`} key="2">
+                        <div className={`portfolio ${styevariation}`}>
+                            <div className="thumbnail-inner">
+                                <div className={`thumbnail ${PortfolioListContent[3].image}`}></div>
+                                <div className={`bg-blr-image ${PortfolioListContent[3].image}`}></div>
+                            </div>
+                            <div className="content">
+                                <div className="inner">
+                                    <p>{PortfolioListContent[3].category}</p>
+                                    <h4><a href="/project-blog-details-chatbot">{PortfolioListContent[3].title}</a></h4>
+                                    <div className="portfolio-button">
+                                        <a className="rn-btn" href="/project-blog-details-chatbot">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <Link className="link-overlay" to="/project-blog-details-chatbot"></Link>
+                        </div>
+                    </div>
+                }
                 {
                     // list.map((value , index) => (
                     //     <div className={`${column}`} key={index}>

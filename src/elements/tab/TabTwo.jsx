@@ -4,9 +4,9 @@ import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 class TabsTwo extends Component{
     render(){
         let 
-        tab1 = "Main skills",
-        tab2 = "Education & Certification",
-        tab3 = "Experiences";
+        tab1 = "Skills",
+        tab2 = "Education",
+        tab3 = "Professional Experiences";
         const { tabStyle } = this.props
         return(
             <div>
@@ -14,6 +14,15 @@ class TabsTwo extends Component{
                 <div className="tabs-area">
                     <div className="container">
                         <div className="row">
+                        {/* <div className="row">
+                            <div className="col-lg-12">
+                                <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                    <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/17wL6uq284y825XaQH5IY1P9HGzZLaF6t/view?usp=sharing">
+                                        <span>Get my Resume</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> */}
                             <div className="col-lg-12">
                                 <Tabs>
                                     <TabList  className={`${tabStyle}`}>
@@ -22,33 +31,34 @@ class TabsTwo extends Component{
                                         <Tab>{tab3}</Tab>
                                     </TabList>
                                     <TabPanel>
+                                        
                                         <div className="single-tab-content">
                                             <ul>
                                                 <li>
                                                     <a href="/service">Programming Languages <span></span></a>
-                                                    Java, C++, Kotlin, Python, SQL, R
+                                                    Java, Kotlin, Python, SQL, C++, R
                                                 </li>
                                                 <li>
                                                     <a href="/service">Front-End Technology <span></span></a>
-                                                    ES6 JS, React, Bootstrap, Redux.js, Node.js, Retrofit, Glide
+                                                    ES6 JS, React, React Native, Redux.js, Kotlin
                                                 </li>
                                                 <li>
                                                     <a href="/service">Back-End and Databases <span></span></a>
-                                                    Express.js, Spring Boot, Hibernate, MongoDB, MySQL
+                                                    Spring Boot, FastAPI, Express.js, Hibernate, MongoDB, MySQL
                                                 </li>
                                                 <li>
-                                                    <a href="/service">Platform & Tool<span></span></a>
-                                                    Git, Maven, Gradle, Docker, Firebase, Heroku, Digital Ocean, Figma, Tableau
+                                                    <a href="/service">Platform & Tools<span></span></a>
+                                                    AWS Lambda, AWS LightSail, Azure, Git, Maven, Gradle, Docker, Firebase, Heroku, Digital Ocean, Figma, Tableau
                                                 </li>
-                                                <div className="row">
+                                                {/* <div className="row">
                                                     <div className="col-lg-12">
                                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/1L0yE5tx_uMOYAn73LkfZwU4cYhTHknz2/view?usp=sharing">
+                                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/17wL6uq284y825XaQH5IY1P9HGzZLaF6t/view?usp=sharing">
                                                                 <span>Get my Resume</span>
                                                             </a>
                                                         </div>
                                                     </div>
-                                                </div>
+                                                </div> */}
                                             </ul>
                                         </div>
                                     </TabPanel>
@@ -57,13 +67,13 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">M.S. In Computer Science<span> - Syracuse University, Syracuse, NY</span></a> May 2023
+                                                   <div><div style={{fontWeight:'bold'}}>M.S. In Computer Science</div>Syracuse University, Syracuse, NY</div> May 2023
                                                </li>
                                                <li>
-                                                   <a href="/service">B.A. Geography: Data Science w/ Minor In Informatics<span> - University of Washington, Seattle, WA</span></a> Jun 2021
+                                                   <div><div style={{fontWeight:'bold'}}>B.A. Geography: Data Science with Minor In Informatics</div>University of Washington, Seattle, WA</div> Jun 2021
                                                </li>
                                                <li>
-                                                   <a href="/service">Database Management Certificate<span> - University of Washington, Seattle, WA</span></a> Aug 2018
+                                                   <div><div style={{fontWeight:'bold'}}>Database Management Certificate</div>University of Washington, Seattle, WA</div> Aug 2018
                                                </li>
                                            </ul>
                                        </div>
@@ -73,7 +83,8 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <a href="/service">Full Stack Developer Internship<span> - Soca Networks</span></a> May 2022 - Sep 2022
+                                                   <div style={{fontWeight:'bold'}}>Software Engineer - Day & Nite All Service</div> July 2023 - Present
+                                                   <div style={{fontWeight:'bold'}}>Full Stack Developer Internship - Soca Networks</div> May 2022 - Sep 2022
                                                </li>
                                            </ul>
                                        </div>
@@ -81,8 +92,19 @@ class TabsTwo extends Component{
                                 </Tabs>
                             </div>
                         </div>
+                        {/* <div className="row">
+                            <div className="col-lg-12">
+                                <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                    <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/17wL6uq284y825XaQH5IY1P9HGzZLaF6t/view?usp=sharing">
+                                        <span>Get my Resume</span>
+                                    </a>
+                                </div>
+                            </div>
+                        </div> */}
                     </div>
+                    
                 </div>
+                
                 {/* End Tabs Area */}
             </div>
         )

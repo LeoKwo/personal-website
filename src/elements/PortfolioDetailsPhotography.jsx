@@ -1,8 +1,8 @@
 import React, { Component, useState, useCallback } from "react";
 
 import PageHelmet from "../component/common/Helmet";
-import ModalVideo from 'react-modal-video';
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+// import ModalVideo from 'react-modal-video';
+// import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import LeoHeader2 from "../component/header/LeoHeader2";
@@ -12,8 +12,8 @@ import { photos } from "./photos";
 import Carousel, { Modal, ModalGateway } from "react-images";
 
 
-const igLink =
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'}
+// const igLink =
+//     {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'}
 
 class PortfolioDetailsPhotography extends Component{
     constructor () {
@@ -63,7 +63,7 @@ class PortfolioDetailsPhotography extends Component{
                                     <div className="inner">
 
                                         <h2>Gallery</h2>
-                                        <p>I mainly shoot cityscapes. I am always drawn to beautiful sunsets and am obessed with tonal variations and micro contrasts.</p>
+                                        <p>I specialize in capturing urban landscapes, particularly entrancing cityscapes bathed in the hues of captivating sunsets. My deep fascination lies in the intricate dance of tonal nuances and delicate micro-contrasts.</p>
 
                                         {/* <Gallery photos={photos} direction={"row"} /> */}
                                         <Gallery photos={photos} direction={"row"} onClick={(event, { photo, index }) => this.setState({ currentImage : index, viewerIsOpen : true })} />

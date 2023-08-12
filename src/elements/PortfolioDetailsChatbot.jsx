@@ -1,22 +1,18 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 // import ModalVideo from 'react-modal-video';
-import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaMedium } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import LeoHeader2 from "../component/header/LeoHeader2";
 import LeoFooter from "../component/footer/LeoFooter";
 
-const SocialShare = [
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
-    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo'},
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
-]
+const GitHubLink =
+    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/chatbot_rkguo'}
+const MediumLink =
+    {Social: <FaMedium /> , link: 'https://medium.com/@rkguo/llm-powered-chatbot-for-your-website-a-step-by-step-guide-37449b607e92'}
 
-const GitHubLink = 
-    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/mern_exercise_tracker'}
-
-class PortfolioDetailsMern extends Component{
+class PortfolioDetailsChatbot extends Component{
     constructor () {
         super()
         this.state = {
@@ -30,21 +26,22 @@ class PortfolioDetailsMern extends Component{
     render(){
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='Exercise Tracker' />
-
+                <PageHelmet pageTitle='Chatbot' />
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
                 <LeoHeader2 logo="symbol-dark" />
-                
+
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7">
+                <div className="rn-page-title-area pt--120 pb--190 bg-chatbot"  data-black-overlay="4">
+
+                {/* <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7"> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Exercise Tracker Web Application</h2>
-                                    <p>Track exercise activities</p>
+                                    <h2 className="title theme-gradient">rkguo.xyz chatbot</h2>
+                                    <p>GenAI + Cloud</p>
                                 </div>
                             </div>
                         </div>
@@ -60,70 +57,62 @@ class PortfolioDetailsMern extends Component{
                                 <div className="portfolio-details">
                                     <div className="inner">
                                         <h2>Project Overview</h2>
-                                        <p className="subtitle">MERN-stack development project.</p>
+                                        <p className="subtitle">Full stack application developed using generative AI and backend engineering, deployed to the cloud</p>
                                         {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p> */}
 
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
                                                 <span>Frontend</span>
-                                                <h5>JavaScript XML</h5>
-                                                <h5>React</h5>
-                                                <h5>axios</h5>
+                                                <h4>React</h4>
                                             </div>
 
                                             <div className="port-view">
                                                 <span>Backend</span>
-                                                <h5>Express.js</h5>
-                                                <h5>Node.js</h5>
-                                                <h5>dotenv</h5>
-                                                <h5>cors</h5>
-                                                <h5>Mongoose</h5>
-                                                
+                                                <h4>FastAPI</h4>
+                                                <h4>Python 3.11</h4>
 
                                             </div>
 
                                             <div className="port-view">
                                                 <span>Database</span>
-                                                <h5>MongoDB</h5>
+                                                <h4>MongoDB</h4>
                                                 <h5>MongoDB Atlas</h5>
+                                            </div>
+
+                                            <div className="port-view">
+                                                <span>Deployment</span>
+                                                <h4>Heroku</h4>
                                             </div>
                                         </div>
 
                                         <hr/>
                                         <hr/>
 
-                                        <h3>GitHub Repository</h3>
+                                        <h3>For more information</h3>
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
+
+                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Chatbot github repository </li>
+                                                <li><a href={`${MediumLink.link}`}>{MediumLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Medium article documenting my process</li>
                                                 
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;MERN-Stack Exercise Tracker</li>
-                                                {
-                                                // SocialShare.map((val , i) => (
-                                                //     <li key={i}><a href={`${val.link}`}>{val.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Check out</li>
-                                                // ))
-                                                }
                                             </ul>
                                         </div>
-
-                                        <h3>Features Implemented</h3>
-
-                                        <p>Create new users</p>
-                                        <p>Add new activity logs</p>
-                                        <p>Delete/edit existing records</p>
-                                        <p>Display user name, activity description, duration, and date</p>
 
                                         <h3>Screenshots</h3>
 
-                                        
-                                        <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
-                                            <ul className="social-share rn-lg-size  justify-content-start liststyle mt--15">
-                                                
-                                                <li><img src="/assets/images/custom/mern-1.png"></img></li>
-                                                <li><img src="/assets/images/custom/mern-2.png"></img></li>
-                                                <li><img src="/assets/images/custom/mern-3.png"></img></li>
-                                                <li><img src="/assets/images/custom/mern-4.png"></img></li>
-                                                <li><img src="/assets/images/custom/mern-5.png"></img></li>
+                                        <div className="portfolio-view-list d-flex flex-wrap">
+                                            <div className="port-view">
+                                                <img src="/assets/images/custom/chatbot-1.jpg"></img>
+                                            </div>
+                                            
+                                        </div>
+
+                                        {/* <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
+                                            <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
+
+                                                <li></li>
+                                                <li>da</li>
 
                                                 {
                                                 // SocialShare.map((val , i) => (
@@ -131,7 +120,7 @@ class PortfolioDetailsMern extends Component{
                                                 // ))
                                                 }
                                             </ul>
-                                        </div>
+                                        </div> */}
 
                                     {/* </div>
                                     <div className="portfolio-thumb-inner">
@@ -140,7 +129,7 @@ class PortfolioDetailsMern extends Component{
                                             <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId='ZOoVOfieAF8' onClose={() => this.setState({isOpen: false})} />
                                             <button className="video-popup position-top-center" onClick={this.openModal}><span className="play-icon"></span></button>
                                         </div>
-                                        
+
                                         <div className="thumb mb--30">
                                             <img src="/assets/images/portfolio/portfolio-big-02.jpg" alt="Portfolio Images"/>
                                         </div>
@@ -210,12 +199,12 @@ class PortfolioDetailsMern extends Component{
                     </ScrollToTop>
                 </div>
                 {/* End Back To Top */}
-                
-                <LeoFooter />  
+
+                <LeoFooter />
 
 
             </React.Fragment>
         )
     }
 }
-export default PortfolioDetailsMern;
+export default PortfolioDetailsChatbot;

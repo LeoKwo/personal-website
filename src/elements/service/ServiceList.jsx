@@ -18,7 +18,7 @@ const ServiceList = [
     {
         icon: <SiSpring />,
         title: 'Back-End Development',
-        description: 'Java is my primary programming language. For backend, my technology stack includes SpringBoot, Hibernate, and Rest APIs.'
+        description: 'Java and Python are my primary programming languages. For backend, my technology stack includes SpringBoot and FastAPI. I have also deployed multiple projects using AWS Lambda, AWS LightSail, Heroku and Docker.'
     },
     {
         icon: <GrAndroid />,
@@ -27,15 +27,15 @@ const ServiceList = [
     }
 ]
 
-const techStack = (
-    <div>
-        abc
-    </div>
-)
+// const techStack = (
+//     <div>
+//         abc
+//     </div>
+// )
 
-const itemClicked = (i) => {
-    // console.log(techStack);
-}
+// const itemClicked = (i) => {
+//     // console.log(techStack);
+// }
 
 
 class ServiceThree extends Component{
@@ -78,54 +78,59 @@ class ServiceThree extends Component{
                     <Modal className="tech-stack-modal" isOpen={this.state.isOpen} onClose={() => this.setState({isOpen: false})}>
                         <div className="modal-wrapper">
                             <h2>My Tech Stack</h2>
-                            <p>Last updated on Jan 4th, 2023</p>
-                            <div className="tech-wrapper">
-                                <h3>Front-end technology</h3>
-                                <h4>Languages</h4>
-                                <ul className="tech-list">
-                                    <li>HTML</li>
-                                    <li>CSS/Sass/Less</li>
-                                    <li>ES6 JavaScript</li>
-                                </ul>
-                                <h4>Frameworks and packages</h4>
-                                <ul className="tech-list">
-                                    <li>React</li>
-                                    <li>Redux</li>
-                                    <li>Bootstrap</li>
-                                    <li>Ant Design</li>
-                                    <li>jQuery</li>
-                                </ul>
-                            </div>
-                            <div className="tech-wrapper">
-                                <h3>Back-end and database</h3>
-                                <h4>Languages</h4>
-                                <ul className="tech-list">
-                                    <li>Java</li>
-                                    <li>SQL</li>
-                                </ul>
-                                <h4>Frameworks and packages</h4>
-                                <ul className="tech-list">
-                                    <li>Spring Boot</li>
-                                    <li>Node.js</li>
-                                    <li>Express.js</li>
-                                    <li>MongoDB</li>
-                                    <li>MySQL</li>
-                                    <li>Docker</li>
-                                    <li>Digital Ocean</li>
-                                    <li>Firebase</li>
-                                    <li>Heroku</li>
-                                </ul>
-                            </div>
-                            <div className="tech-wrapper">
-                                <h3>Android Development</h3>
-                                <h4>Languages</h4>
-                                <ul className="tech-list">
-                                    <li>Kotlin</li>
-                                </ul>
-                                <h4>Frameworks and packages</h4>
-                                <ul className="tech-list">
-                                    <li>Retrofit</li>
-                                </ul>
+                            <p>Last updated on Aug 12th, 2023</p>
+                            <div className="tech-wrap-around">
+                                <div className="tech-wrapper">
+                                    <h3>Front-end technology</h3>
+                                    <h4>Frameworks and packages</h4>
+                                    <ul className="tech-list">
+                                        <li>React</li>
+                                        <li>Redux</li>
+                                        <li>Bootstrap</li>
+                                        <li>Ant Design</li>
+                                    </ul>
+                                </div>
+                                <div className="tech-wrapper">
+                                    <h3>Back-end and database</h3>
+                                    <h4>Languages</h4>
+                                    <ul className="tech-list">
+                                        <li>Java</li>
+                                        <li>Python</li>
+                                        <li>SQL</li>
+                                    </ul>
+                                    <h4>Frameworks and packages</h4>
+                                    <ul className="tech-list">
+                                        <li>Spring Boot</li>
+                                        <li>FastAPI</li>
+                                        <li>Node.js</li>
+                                        <li>Express.js</li>
+                                        <li>MongoDB</li>
+                                        <li>MySQL</li>
+                                        <li>Docker</li>
+                                    </ul>
+                                    <h4>Cloud Platforms</h4>
+                                    <ul className="tech-list">
+                                        <li>AWS Lambda</li>
+                                        <li>AWS LightSail</li>
+                                        <li>Heroku</li>
+                                        <li>Azure</li>
+                                        <li>MongoDB Atlas</li>
+                                        <li>Firebase</li>
+                                        <li>Digital Ocean</li>
+                                    </ul>
+                                </div>
+                                <div className="tech-wrapper">
+                                    <h3>Android Development</h3>
+                                    <h4>Languages</h4>
+                                    <ul className="tech-list">
+                                        <li>Kotlin</li>
+                                        <li>React Native</li>
+                                    </ul>
+                                    <h4>Frameworks and packages</h4>
+                                    <ul className="tech-list">
+                                        <li>Retrofit</li>
+                                    </ul>
+                                </div>
                             </div>
                         
                         <AiFillCloseCircle onClick={() => this.setState({isOpen: false})} />
