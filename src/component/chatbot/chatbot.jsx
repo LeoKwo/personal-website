@@ -43,6 +43,7 @@ const Chatbot = () => {
     return (
 
         <div className="chatbot-container">
+            <script src="https://kit.fontawesome.com/bbbb8a85b2.js" crossorigin="anonymous"></script>
             {!expanded && 
                 <div className="chatbot-button" onClick={toggleChatbot}>
                     <FaComment className="chatbot-button-icon"/>
@@ -53,6 +54,7 @@ const Chatbot = () => {
                 <div className="chatbot-content">
                     <div className="chatbot-button" onClick={toggleChatbot}>
                         <FaTimes className="chatbot-button-icon"/>
+                        
                     </div>
                     
                     <div className="chatbot-messages">
@@ -66,9 +68,13 @@ const Chatbot = () => {
                     <form className="chatbot-form" onSubmit={handleSubmit}>
                         <input className="chatbot-form-input" type="text" value={inputValue} onChange={handleChange} placeholder='Ask me about Ruikang Guo' />
                         
-                        <button className="chatbot-form-button rn-button-style--2 btn-solid" type="submit">Ask Chatbot</button>
+                        <button className="chatbot-form-button rn-button-style--2 btn-solid" type="submit">
+                            Ask Chatbot
+                        </button>
+                        
                     </form>
-                    {isLoading && <div className="loading-indicator">Thinking...</div>}
+                    
+                    {isLoading && <div className="loading-indicator">Thinking...  <i className="fa-solid fa-face-smile-wink fa-beat-fade fa-lg" style={{color: "#ffffff"}}></i></div>}
                 </div>
             }
         </div>
