@@ -68,9 +68,7 @@ const Chatbot = () => {
                     <form className="chatbot-form" onSubmit={handleSubmit}>
                         <input className="chatbot-form-input" type="text" value={inputValue} onChange={handleChange} placeholder='Ask me about Ruikang Guo' />
                         
-                        <button className="chatbot-form-button rn-button-style--2 btn-solid" type="submit">
-                            Ask Chatbot
-                        </button>
+                        <button className="chatbot-form-button rn-button-style--2 btn-solid" type="submit">Ask Chatbot</button>
                         
                     </form>
                     
