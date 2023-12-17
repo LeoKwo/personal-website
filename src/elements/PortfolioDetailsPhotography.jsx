@@ -31,7 +31,7 @@ class PortfolioDetailsPhotography extends Component{
     render(){
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='Photography' />
+                <PageHelmet pageTitle='rkguo gallery' />
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
@@ -45,7 +45,8 @@ class PortfolioDetailsPhotography extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">Photography Gallery</h2>
+                                    <h2 className="title theme-gradient">rkguo gallery</h2>
+                                    <p>Engineer by profession, artist by heart.</p>
                                     <p>Rage, rage against the dying of the light.</p>
                                 </div>
                             </div>
@@ -62,8 +63,10 @@ class PortfolioDetailsPhotography extends Component{
                                 <div className="portfolio-details">
                                     <div className="inner">
 
-                                        <h2>Gallery</h2>
+                                        <h3>Captivating lights</h3>
                                         <p>I specialize in capturing urban landscapes, particularly entrancing cityscapes bathed in the hues of captivating sunsets. My deep fascination lies in the intricate dance of tonal nuances and delicate micro-contrasts.</p>
+
+                                        <p>Here is a collection of my favorites over the years.</p>
 
                                         {/* <Gallery photos={photos} direction={"row"} /> */}
                                         <Gallery photos={photos} direction={"row"} onClick={(event, { photo, index }) => this.setState({ currentImage : index, viewerIsOpen : true })} />

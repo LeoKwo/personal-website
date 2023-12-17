@@ -18,14 +18,14 @@ import Chatbot from '../component/chatbot/chatbot';
 const SlideList = [
     {
         textPosition: 'text-left',
-        category: 'Greeting to those who traverse the digital realm!',
+        category: 'Hello dwellers of the digital realm!',
         description: '',
         buttonText: 'Contact',
         buttonLink: 'mailto:leokwok1997@hotmail.com'
     }
 ]
 const PortfolioLanding = () => {
-    let title = 'About Me',
+    let title = 'About Me 💬',
         description = 'I am a full-stack software engineer at Day & Nite All Service. I am looking for every opportunity to learn, create, and work.';
     // const PostList = BlogContent.slice(0 , 3);
     return (
@@ -45,14 +45,12 @@ const PortfolioLanding = () => {
                                             {value.category ? <span>{value.category}</span> : ''}
                                             <h1 className="title"><span role='img'>&#x1F44B;</span> I’m Ruikang Guo <br/>
                                             <TextLoop>
-                                                <span> Web Developer.</span>
-                                                <span> Android Developer.</span>
-                                                <span> Backend Engineer.</span>
-                                                <span> GenAI Futurist.</span>
-                                                <span> Photographer.</span>
+                                                <span> developer & engineer.</span>
+                                                <span> e/acc.</span>
+                                                <span> artist.</span>
                                             </TextLoop>{" "}
                                             </h1>
-                                            <h2>based in Long Island, NY</h2>
+                                            <h2>@ Long Island, NY</h2>
                                             {value.description ? <p className="description">{value.description}</p> : ''}
                                             {value.buttonText ? <div className="slide-btn"><a className="rn-button-style--2 btn-primary-color" href={`${value.buttonLink}`}>{value.buttonText}</a></div> : ''}
                                         </div>
@@ -76,7 +74,7 @@ const PortfolioLanding = () => {
                                     <div className="thumbnail">
                                         <img className="w-100" src="/assets/images/about/about-leo.jpg" alt="About Images"/>
                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/17wL6uq284y825XaQH5IY1P9HGzZLaF6t/view?usp=sharing">
+                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/10d81h9ZBR2fTDwuDbNbDEyoTYSacQaT4/view?usp=sharing">
                                                 <span>View Resume</span>
                                             </a>
                                         </div>
@@ -109,14 +107,14 @@ const PortfolioLanding = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">My Tech Stack</h2>
+                                    <h2 className="title">Tech Stacks 👨🏻‍💻</h2>
                                     <p>I am always eager to learn and develop new skills.</p>
                                 </div>
                             </div>
                         </div>
                         <div className="row creative-service">
                             <div className="col-lg-12">
-                                <ServiceList item="3" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
+                                <ServiceList item="4" column="col-lg-4 col-md-6 col-sm-6 col-12 text-left" />
                             </div>
                         </div>
                     </div>
@@ -133,7 +131,7 @@ const PortfolioLanding = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">My Project Blogs</h2>
+                                        <h2 className="title">My Blog 📝</h2>
                                         <p>I'd like to keep track of my learning process. They should provide you a sense of where I came from and where I am headed to next.</p>
                                     </div>
                                 </div>
@@ -158,6 +156,7 @@ const PortfolioLanding = () => {
             {/* End Portfolio Area */}
 
             {/* Start Blog Area */}
+
             {/* <div id="blog" className="fix">
                 <div className="rn-blog-area ptb--120 bg_color--5 mb-dec--30">
                     <div className="container">
@@ -197,7 +196,7 @@ const PortfolioLanding = () => {
             {/* Start Contact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--0">
-                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="Let's connect." />
+                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="Let's connect. 🙌🏻" />
                 </div>
             </div>
             {/* End COntact Area */}
