@@ -8,9 +8,7 @@ import LeoHeader2 from "../component/header/LeoHeader2";
 import LeoFooter from "../component/footer/LeoFooter";
 
 const GitHubLink =
-    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/chatbot_rkguo'}
-const MediumLink =
-    {Social: <FaMedium /> , link: 'https://medium.com/@rkguo/llm-powered-chatbot-for-your-website-a-step-by-step-guide-37449b607e92'}
+    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/GuoGenius'}
 
 class PortfolioDetailsChatbot extends Component{
     constructor () {
@@ -26,22 +24,22 @@ class PortfolioDetailsChatbot extends Component{
     render(){
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='Chatbot' />
+                <PageHelmet pageTitle='GuoGenius' />
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
                 <LeoHeader2 logo="symbol-dark" />
 
                 {/* Start Breadcrump Area */}
-                <div className="rn-page-title-area pt--120 pb--190 bg-chatbot"  data-black-overlay="4">
+                <div className="rn-page-title-area pt--120 pb--190 bg-guogenius"  data-black-overlay="4">
 
                 {/* <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7"> */}
                     <div className="container">
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">rkguo.xyz chatbot</h2>
-                                    <p>GenAI + Cloud</p>
+                                    <h2 className="title theme-gradient">GuoGenius</h2>
+                                    <p>LangChain + Pinecone + Streamlit + Heroku</p>
                                 </div>
                             </div>
                         </div>
@@ -57,44 +55,63 @@ class PortfolioDetailsChatbot extends Component{
                                 <div className="portfolio-details">
                                     <div className="inner">
                                         <h2>Project Overview</h2>
-                                        <p className="subtitle">Full stack application developed using generative AI and backend engineering, deployed to the cloud</p>
+                                        <p className="subtitle">Full stack application developed using LangChain + Pinecone + Streamlit, deployed to the cloud</p>
                                         {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p> */}
-                                        <h4 style={{"color":"orangered"}}>Please note the current implementation of Chatbot utilizes a different approach. This version of implementation is deprecated.</h4>
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
                                                 <span>Frontend</span>
-                                                <h4>React</h4>
+                                                <h4>Streamlit</h4>
                                             </div>
 
                                             <div className="port-view">
                                                 <span>Backend</span>
-                                                <h4>FastAPI</h4>
-                                                <h4>LlamaIndex</h4>
                                                 <h4>Python 3.11</h4>
-
+                                                <h4>LlamaHub for pdf loading</h4>
+                                                <h4>LangChain Agent</h4>
                                             </div>
 
                                             <div className="port-view">
                                                 <span>Database</span>
-                                                <h4>LlamaIndex Local Vector Document Store</h4>
+                                                <h4>Pinecone Vector Database</h4>
                                             </div>
 
                                             <div className="port-view">
                                                 <span>Deployment</span>
                                                 <h4>Heroku</h4>
+                                                <h4>iframe embedding to rkguo.xyz</h4>
                                             </div>
                                         </div>
 
                                         <hr/>
                                         <hr/>
 
+                                        <h3>Improvement over version 1</h3>
+
+                                        <p>
+                                            The main difference is the usage of AI agent.
+                                            The first implementation uses LlamaIndex's document retrieval RAG pipeline to get relevant information from a uploaded file. 
+                                            But the current implementation uses LangChain agent + tools RAG pipeline to formulate an answer.
+                                        </p>
+
+                                        <p>
+                                            The first implementation of chatbot is only capable of answer resume related questions.
+                                            In the current version of the chatbot, in addition to answering resume questions, the agent can search the web for additional information using DuckDuckGo Search or Wikipedia.
+                                            It can also calculate Math questions using a calculator tool.
+                                        </p>
+
+                                        <p>
+                                            Everything is packed into a Streamlit app, deployed to Heroku and embeded as an "iframe" element to my website.
+                                            The downside is that the webpage now loads much slower due to server-side performance issues.
+                                            I have noticed Streamlit apps being extra slow when it comes to booting up. 
+                                            Improving the chatbot loading speed is the next item in my development plan.
+                                        </p>
+
                                         <h3>For more information</h3>
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
 
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Chatbot github repository </li>
-                                                <li><a href={`${MediumLink.link}`}>{MediumLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Medium article documenting my process</li>
+                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GuoGenius github repository </li>
                                                 
                                             </ul>
                                         </div>
@@ -103,7 +120,7 @@ class PortfolioDetailsChatbot extends Component{
 
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
-                                                <img src="/assets/images/custom/chatbot-1.jpg"></img>
+                                                <img src="/assets/images/custom/chatbot-2.jpg"></img>
                                             </div>
                                             
                                         </div>

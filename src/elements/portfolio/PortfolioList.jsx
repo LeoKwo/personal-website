@@ -20,7 +20,12 @@ const PortfolioListContent = [
     {
         image: 'image-chatbot',
         category: 'GenAI + Cloud Computing',
-        title: 'Chatbot for rkguo.xyz'
+        title: 'Chatbot for rkguo.xyz (version 1, deprecated)'
+    },
+    {
+        image: 'image-guogenius',
+        category: 'GenAI + Cloud Computing',
+        title: 'GuoGenius (Chatbot for rkguo.xyz - version 2, current)'
     }
 ]
 
@@ -30,6 +35,26 @@ class PortfolioList extends Component{
         const list = PortfolioListContent.slice(0 , this.props.item);
         return(
             <React.Fragment> 
+                {
+                    <div className={`${column}`} key="2">
+                        <div className={`portfolio ${styevariation}`}>
+                            <div className="thumbnail-inner">
+                                <div className={`thumbnail ${PortfolioListContent[4].image}`}></div>
+                                <div className={`bg-blr-image ${PortfolioListContent[4].image}`}></div>
+                            </div>
+                            <div className="content">
+                                <div className="inner">
+                                    <p>{PortfolioListContent[4].category}</p>
+                                    <h4><a href="/project-blog-details-guogenius">{PortfolioListContent[4].title}</a></h4>
+                                    <div className="portfolio-button">
+                                        <a className="rn-btn" href="/project-blog-details-guogenius">View Details</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <Link className="link-overlay" to="/project-blog-details-guogenius"></Link>
+                        </div>
+                    </div>
+                }
                 {
                     <div className={`${column}`} key="2">
                         <div className={`portfolio ${styevariation}`}>
