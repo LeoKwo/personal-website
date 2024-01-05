@@ -116,7 +116,17 @@ class PortfolioDetailsChatbot extends Component{
                                             </ul>
                                         </div>
 
-                                        <h3>Screenshots</h3>
+                                        <h2>Demo Video</h2>
+
+                                        <div className="portfolio-view-list d-flex flex-wrap" style={{"marginBottom": "50px"}}>
+                                            <div className="port-view" style={{"marginTop" : "30px", "width" : "100%", "height" : "400px"}}>
+                                                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/G8MiBVOZdX4?si=4HMTIN6nK7gmbfcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
+                                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G8MiBVOZdX4?si=4HMTIN6nK7gmbfcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                
+                                            </div>
+                                        </div>
+
+                                        <h2>Screenshots</h2>
 
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
