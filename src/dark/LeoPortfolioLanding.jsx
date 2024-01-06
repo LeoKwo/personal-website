@@ -4,6 +4,8 @@
 import React from 'react';
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import { MdEmail } from "react-icons/md";
 import Helmet from "../component/common/Helmet";
 import TextLoop from "react-text-loop";
 import LeoHeader from "../component/header/LeoHeader";
@@ -25,8 +27,8 @@ const SlideList = [
     }
 ]
 const PortfolioLanding = () => {
-    let title = 'About Me 💬',
-        description = 'I am a full-stack software engineer at Day & Nite All Service. I am looking for every opportunity to learn, create, and work.';
+    let title = '💬 About Me',
+        description = "I have a Master's in Computer Science from Syracuse University. Proficient in full-stack and mobile development (Kotlin, React Native), cloud computing (AWS, Heroku), and AI tools (LangChain, Pinecone). Led a GenAI email chatbot project at Day & Nite All Service. Ideal for full-stack software engineering and generative AI roles.";
     // const PostList = BlogContent.slice(0 , 3);
     return (
         <div className="active-dark">
@@ -43,11 +45,12 @@ const PortfolioLanding = () => {
                                     <div className="col-lg-12">
                                         <div className={`inner ${value.textPosition}`}>
                                             {value.category ? <span>{value.category}</span> : ''}
-                                            <h1 className="title"><span role='img'>&#x1F44B;</span> I’m Ruikang Guo <br/>
+                                            <h1 className="title">👋🏻 Ruikang Guo<br/>
+                                            {/* <h1 className="title"><span role='img'>&#x1F44B;</span> Ruikang Guo <br/> */}
                                             <TextLoop>
-                                                <span> developer & engineer.</span>
-                                                <span> e/acc.</span>
-                                                <span> artist.</span>
+                                                <span> developer & engineer</span>
+                                                <span> artist</span>
+                                                <span> intp</span>
                                             </TextLoop>{" "}
                                             </h1>
                                             <h2>@ Long Island, NY</h2>
@@ -74,8 +77,8 @@ const PortfolioLanding = () => {
                                     <div className="thumbnail">
                                         <img className="w-100" src="/assets/images/about/about-leo.jpg" alt="About Images"/>
                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
-                                            <a className="rn-button-style--2 btn-solid" href="https://drive.google.com/file/d/10d81h9ZBR2fTDwuDbNbDEyoTYSacQaT4/view?usp=sharing">
-                                                <span>View Resume</span>
+                                            <a className="rn-button-style--2 btn-solid" href="https://cw6g.short.gy/resume">
+                                                <span style={{"display": "flex", "alignItems":"center"}}><FaCloudDownloadAlt />&nbsp;&nbsp;My resume</span>
                                             </a>
                                         </div>
                                     </div>
@@ -107,7 +110,7 @@ const PortfolioLanding = () => {
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                    <h2 className="title">Tech Stacks 👨🏻‍💻</h2>
+                                    <h2 className="title">👨🏻‍💻 Skills</h2>
                                     <p>I am always eager to learn and develop new skills.</p>
                                 </div>
                             </div>
@@ -131,8 +134,8 @@ const PortfolioLanding = () => {
                             <div className="row">
                                 <div className="col-lg-12">
                                     <div className="section-title text-center service-style--3 mb--30 mb_sm--0">
-                                        <h2 className="title">My Blog 📝</h2>
-                                        <p>I'd like to keep track of my learning process. They should provide you a sense of where I came from and where I am headed to next.</p>
+                                        <h2 className="title">📝 Blogs</h2>
+                                        <p>I always keep track of my learning process. My blogs show where I came from and where I am headed to next.</p>
                                     </div>
                                 </div>
                             </div>
@@ -196,7 +199,7 @@ const PortfolioLanding = () => {
             {/* Start Contact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--0">
-                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="Let's connect. 🙌🏻" />
+                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle="🙌🏻 Let's connect" />
                 </div>
             </div>
             {/* End COntact Area */}
@@ -207,16 +210,17 @@ const PortfolioLanding = () => {
                         <div className="row align-items-end">
                             <div className="col-lg-12 col-md-12 col-sm-12 col-12">
                                 <div className="section-title text-center">
-                                    <h2>Like my page?</h2>
-                                    <p>Help me improve it.</p>
+                                    <h2>The End</h2>
+                                    <p>Liked my page? Help me improve it.</p>
+                                    <p>👇🏻</p>
                                 </div>
                             </div>
                         </div>
-                        <div className="row mt--60 mt_sm--40">
+                        <div className="row mt--10 mt_sm--0">
                             <div className="col-lg-12">
                                 <div className="view-more-btn mt--60 mt_sm--30 text-center">
                                     <a className="rn-button-style--2 rn-btn-small" href="https://github.com/LeoKwo/personal-website">
-                                        <span>Visit Repository on GitHub</span>
+                                        <span style={{"textTransform": "none"}}>rkguo.xyz on GitHub</span>
                                     </a>
                                 </div>
                             </div>
