@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import PageHelmet from "../component/common/Helmet";
 // import ModalVideo from 'react-modal-video';
-import { FaGithub, FaMedium } from "react-icons/fa";
+import { FaGithub, FaCloud } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import LeoHeader2 from "../component/header/LeoHeader2";
@@ -9,6 +9,9 @@ import LeoFooter from "../component/footer/LeoFooter";
 
 const GitHubLink =
     {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/GuoGenius'}
+
+const GuoGeniusLink =
+    {Social: <FaCloud />, link: 'https://guogenius-e9cbdf445f45.herokuapp.com/'}
 
 class PortfolioDetailsChatbot extends Component{
     constructor () {
@@ -106,12 +109,13 @@ class PortfolioDetailsChatbot extends Component{
                                             Improving the chatbot loading speed is the next item in my development plan.
                                         </p>
 
-                                        <h3>For more information</h3>
+                                        <h3>Learn more</h3>
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
 
                                                 <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GuoGenius github repository </li>
+                                                <li><a href={`${GuoGeniusLink.link}`}>{GuoGeniusLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GuoGenius (as seen on homepage) </li>
                                                 
                                             </ul>
                                         </div>
