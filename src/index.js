@@ -47,7 +47,6 @@ import PortfolioDetailsChatbot  from './elements/PortfolioDetailsChatbot';
 import PortfolioDetailsGuoGenius  from './elements/PortfolioDetailsGuoGenius';
 import PortfolioDetailsPhotography from "./elements/PortfolioDetailsPhotography";
 
-
 // import Blog from "./elements/Blog";
 // import BlogDetails from "./elements/BlogDetails";
 // import error404 from "./elements/error404";
@@ -79,44 +78,12 @@ class Root extends Component{
                     <Switch>
                         <Route exact path={`${process.env.PUBLIC_URL}/`} component={LeoPortfolioLanding}/>
                         
-                        {/* Element Layot */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service`} component={Service}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details`} component={ServiceDetails}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/contact`} component={Contact}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/about`} component={About}/> */}
-
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-wavelength`} component={PortfolioDetailsWavelength}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-mern`} component={PortfolioDetailsMern}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-student`} component={PortfolioDetailsStudent}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-chatbot`} component={PortfolioDetailsChatbot}/>
                         <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-guogenius`} component={PortfolioDetailsGuoGenius}/>
 
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details`} component={PortfolioDetails}/> */}
-
-
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/blog`} component={Blog}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/blog-details`} component={BlogDetails}/> */}
-
-                        {/* Blocks Elements  */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/team`} component={Team}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/counters`} component={Counters}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/testimonial`} component={Testimonial}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/portfolio`} component={Portfolio}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/video-popup`} component={VideoPopup}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/gallery`} component={Gallery}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/clint-logo`} component={Brand}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/progressbar`} component={ProgressBar}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/contact-form`} component={ContactForm}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/google-map`} component={GoogleMap}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/columns`} component={Columns}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/pricing-table`} component={PricingTable}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details-0`} component={ServiceDetails0}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details-1`} component={ServiceDetails1}/> */}
-                        {/* <Route exact path={`${process.env.PUBLIC_URL}/service-details-2`} component={ServiceDetails2}/> */}
-
-                        
-                        {/* <Route path={`${process.env.PUBLIC_URL}/404`} component={error404}/> */}
-                        {/* <Route component={error404}/> */}
 
                         <Route exact path={`${process.env.PUBLIC_URL}/photography`} component={PortfolioDetailsPhotography}/>]
 
