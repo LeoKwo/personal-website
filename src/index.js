@@ -69,27 +69,30 @@ import PortfolioDetailsPhotography from "./elements/PortfolioDetailsPhotography"
 import { BrowserRouter, Switch, Route  } from 'react-router-dom';
 import * as serviceWorker from './serviceWorker';
 // import HomePortfolio from './home/HomePortfolio';
+import { LanguageProvider } from './translation/languageContext';
 
 class Root extends Component{
     render(){
         return(
-            <BrowserRouter basename={'/'}>
-                <PageScrollTop>
-                    <Switch>
-                        <Route exact path={`${process.env.PUBLIC_URL}/`} component={LeoPortfolioLanding}/>
-                        
-                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-wavelength`} component={PortfolioDetailsWavelength}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-mern`} component={PortfolioDetailsMern}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-student`} component={PortfolioDetailsStudent}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-chatbot`} component={PortfolioDetailsChatbot}/>
-                        <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-guogenius`} component={PortfolioDetailsGuoGenius}/>
+            <LanguageProvider>
+                <BrowserRouter basename={'/'}>
+                    <PageScrollTop>
+                        <Switch>
+                            <Route exact path={`${process.env.PUBLIC_URL}/`} component={LeoPortfolioLanding}/>
+                            
+                            <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-wavelength`} component={PortfolioDetailsWavelength}/>
+                            <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-mern`} component={PortfolioDetailsMern}/>
+                            <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-student`} component={PortfolioDetailsStudent}/>
+                            <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-chatbot`} component={PortfolioDetailsChatbot}/>
+                            <Route exact path={`${process.env.PUBLIC_URL}/project-blog-details-guogenius`} component={PortfolioDetailsGuoGenius}/>
 
 
-                        <Route exact path={`${process.env.PUBLIC_URL}/photography`} component={PortfolioDetailsPhotography}/>]
+                            <Route exact path={`${process.env.PUBLIC_URL}/photography`} component={PortfolioDetailsPhotography}/>]
 
-                    </Switch>
-                </PageScrollTop>
-            </BrowserRouter>
+                        </Switch>
+                    </PageScrollTop>
+                </BrowserRouter>
+            </LanguageProvider>
         )
     }
 }

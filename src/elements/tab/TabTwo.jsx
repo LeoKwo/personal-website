@@ -1,11 +1,16 @@
 import React, { Component } from "react";
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { LanguageContext } from "../../translation/languageContext";
 
 class TabsTwo extends Component{
+    static contextType = LanguageContext;
+
     render(){
+        const { t } = this.context;
+        
         let 
-            tab1 = "Professional Experiences",
-            tab2 = "Education";
+            tab1 = t('professionalexperience'),
+            tab2 = t('education');
         const { tabStyle } = this.props
         return(
             <div>
@@ -27,8 +32,8 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <div style={{fontWeight:'bold'}}>Software Engineer - Day & Nite All Service</div> July 2023 - Present
-                                                   <div style={{fontWeight:'bold'}}>Full Stack Developer Internship - Soca Networks</div> May 2022 - Sep 2022
+                                                   <div style={{fontWeight:'bold'}}>{t('career1')}</div>{t('career1time')}
+                                                   <div style={{fontWeight:'bold'}}>{t('career2')}</div>{t('career2time')}
                                                </li>
                                            </ul>
                                        </div>
@@ -38,13 +43,14 @@ class TabsTwo extends Component{
                                        <div className="single-tab-content">
                                            <ul>
                                                <li>
-                                                   <div><div style={{fontWeight:'bold'}}>M.S. In Computer Science</div>Syracuse University, Syracuse, NY</div> May 2023
+                                                   <div><div style={{fontWeight:'bold'}}>{t('edu1')}</div>{t('edu1location')}</div>{t('edu1time')}
                                                </li>
                                                <li>
-                                                   <div><div style={{fontWeight:'bold'}}>B.A. Geography: Data Science with Minor In Informatics</div>University of Washington, Seattle, WA</div> Jun 2021
+                                                   <div><div style={{fontWeight:'bold'}}>{t('edu2')}</div>{t('edu2location')}</div>
+                                                   {t('edu2time')}
                                                </li>
                                                <li>
-                                                   <div><div style={{fontWeight:'bold'}}>Database Management Certificate</div>University of Washington, Seattle, WA</div> Aug 2018
+                                                   <div><div style={{fontWeight:'bold'}}>{t('edu3')}</div>{t('edu2location')}</div>{t('edu3time')}
                                                </li>
                                            </ul>
                                        </div>

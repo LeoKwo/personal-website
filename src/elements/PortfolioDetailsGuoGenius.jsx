@@ -6,6 +6,7 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import LeoHeader2 from "../component/header/LeoHeader2";
 import LeoFooter from "../component/footer/LeoFooter";
+import { LanguageContext } from "../translation/languageContext";
 
 const GitHubLink =
     {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/GuoGenius'}
@@ -14,6 +15,8 @@ const GuoGeniusLink =
     {Social: <FaCloud />, link: 'https://guogenius-e9cbdf445f45.herokuapp.com/'}
 
 class PortfolioDetailsChatbot extends Component{
+    static contextType = LanguageContext;
+
     constructor () {
         super()
         this.state = {
@@ -25,9 +28,11 @@ class PortfolioDetailsChatbot extends Component{
         this.setState({isOpen: true})
     }
     render(){
+        const { t } = this.context;
+
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='GuoGenius' />
+                <PageHelmet pageTitle={t('project5')} />
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
@@ -41,7 +46,7 @@ class PortfolioDetailsChatbot extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">GuoGenius</h2>
+                                    <h2 className="title theme-gradient">{t('project5')}</h2>
                                     <p>LangChain + Pinecone + Streamlit + Heroku</p>
                                 </div>
                             </div>
@@ -57,70 +62,60 @@ class PortfolioDetailsChatbot extends Component{
                             <div className="col-lg-12">
                                 <div className="portfolio-details">
                                     <div className="inner">
-                                        <h2>Project Overview</h2>
-                                        <p className="subtitle">Full stack application developed using LangChain + Pinecone + Streamlit, deployed to the cloud</p>
-                                        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p> */}
+                                        <h2>{t('projectoverview')}</h2>
+                                        <p className="subtitle">{t('project5text1')}</p>
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
-                                                <span>Frontend</span>
+                                                <span>{t('frontend')}</span>
                                                 <h4>Streamlit</h4>
                                             </div>
 
                                             <div className="port-view">
-                                                <span>Backend</span>
+                                                <span>{t('backend')}</span>
                                                 <h4>Python 3.11</h4>
-                                                <h4>LlamaHub for pdf loading</h4>
                                                 <h4>LangChain Agent</h4>
                                             </div>
 
                                             <div className="port-view">
-                                                <span>Database</span>
-                                                <h4>Pinecone Vector Database</h4>
+                                                <span>{t('database')}</span>
+                                                <h4>Pinecone {t('vector')} {t('database')}</h4>
                                             </div>
 
                                             <div className="port-view">
-                                                <span>Deployment</span>
+                                                <span>{t('deployment')}</span>
                                                 <h4>Heroku</h4>
-                                                <h4>iframe embedding to rkguo.xyz</h4>
                                             </div>
                                         </div>
 
                                         <hr/>
                                         <hr/>
 
-                                        <h3>Improvement over version 1</h3>
+                                        <h3>{t('project5text2')}</h3>
 
                                         <p>
-                                            The main difference is the usage of AI agent.
-                                            The first implementation uses LlamaIndex's document retrieval RAG pipeline to get relevant information from a uploaded file. 
-                                            But the current implementation uses LangChain agent + tools RAG pipeline to formulate an answer.
+                                            {t('project5text3')}
                                         </p>
 
                                         <p>
-                                            The first implementation of chatbot is only capable of answer resume related questions.
-                                            In the current version of the chatbot, in addition to answering resume questions, the agent can search the web for additional information using DuckDuckGo Search or Wikipedia.
-                                            It can also calculate Math questions using a calculator tool.
+                                            {t('project5text4')}    
                                         </p>
 
                                         <p>
-                                            Everything is packed into a Streamlit app, deployed to Heroku and embeded as an "iframe" element to my website.
-                                            The downside is that the webpage now loads much slower due to server-side performance issues.
-                                            I have noticed Streamlit apps being extra slow when it comes to booting up. 
-                                            Improving the chatbot loading speed is the next item in my development plan.
+                                            {t('project5text5')}    
                                         </p>
 
-                                        <h3>Learn more</h3>
+                                        <h3>{t('learnmore')}</h3>
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
 
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GuoGenius github repository </li>
-                                                <li><a href={`${GuoGeniusLink.link}`}>{GuoGeniusLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GuoGenius (as seen on homepage) </li>
+                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
+                                                <li><a href={`${GuoGeniusLink.link}`}>{GuoGeniusLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Heroku App</li>
                                                 
                                             </ul>
                                         </div>
 
-                                        <h2>Demo Video</h2>
+                                        <h2>{t('demovideo')}</h2>
 
                                         <div className="portfolio-view-list d-flex flex-wrap" style={{"marginBottom": "50px"}}>
                                             <div className="port-view" style={{"marginTop" : "30px", "width" : "100%", "height" : "400px"}}>
@@ -130,7 +125,7 @@ class PortfolioDetailsChatbot extends Component{
                                             </div>
                                         </div>
 
-                                        <h2>Screenshots</h2>
+                                        <h2>{t('screenshot')}</h2>
 
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">

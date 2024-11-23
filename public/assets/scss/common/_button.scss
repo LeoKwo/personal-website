@@ -65,6 +65,83 @@ button {
     }
 }
 
+a ,
+button {
+    &.rn-button-style--3 {
+        padding: 0 20px;
+        //height: 30px;
+        display: inline-block;
+        line-height: 34px;
+        border: 2px solid $theme-color;
+        border-radius: 4px;
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+        // font-family: Maven Pro;
+        color: $theme-color;
+        letter-spacing: 0.2px;
+        @extend %transition;
+        text-transform: uppercase;
+        &:hover {
+            border: 2px solid $theme-color;
+            transform: translateY(-3px);
+            color: #ffffff;
+            background: $theme-color;
+        }
+    }
+}
+
+a ,
+button {
+    &.rn-button-style--4 {
+        padding: 0 20px;
+        //height: 30px;
+        display: inline-block;
+        line-height: 34px;
+        border: 2px solid #b1b4c1;
+        border-radius: 4px;
+        font-size: 14px;
+        position: relative;
+        z-index: 2;
+        // font-family: Maven Pro;
+        color: #b1b4c1;
+        letter-spacing: 0.2px;
+        @extend %transition;
+        text-transform: uppercase;
+        &:hover {
+            border: 2px solid $theme-color;
+            transform: translateY(-3px);
+            color: #ffffff;
+            background: $theme-color;
+        }
+    }
+}
+
+a ,
+button {
+    &.rn-button-style--5 {
+        padding: 0;
+        //height: 30px;
+        // display: inline-block;
+        // line-height: 34px;
+        border: 0;
+        border-radius: 4px;
+        // font-size: 14px;
+        position: relative;
+        z-index: 2;
+        // font-family: Maven Pro;
+        color: #b1b4c1;
+        // letter-spacing: 0.2px;
+        @extend %transition;
+        text-transform: uppercase;
+        &:hover {
+            border: 2px solid $theme-color;
+            transform: translateY(-3px);
+            color: #ffffff;
+            background: $theme-color;
+        }
+    }
+}
 
 button,
 a {

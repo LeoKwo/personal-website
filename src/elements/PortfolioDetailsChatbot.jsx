@@ -6,6 +6,7 @@ import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
 import LeoHeader2 from "../component/header/LeoHeader2";
 import LeoFooter from "../component/footer/LeoFooter";
+import { LanguageContext } from "../translation/languageContext";
 
 const GitHubLink =
     {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/chatbot_rkguo'}
@@ -13,6 +14,8 @@ const MediumLink =
     {Social: <FaMedium /> , link: 'https://medium.com/@rkguo/llm-powered-chatbot-for-your-website-a-step-by-step-guide-37449b607e92'}
 
 class PortfolioDetailsChatbot extends Component{
+    static contextType = LanguageContext;
+
     constructor () {
         super()
         this.state = {
@@ -24,9 +27,11 @@ class PortfolioDetailsChatbot extends Component{
         this.setState({isOpen: true})
     }
     render(){
+        const { t } = this.context;
+
         return(
             <React.Fragment>
-                <PageHelmet pageTitle='Chatbot' />
+                <PageHelmet pageTitle={t('project4')} />
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
@@ -40,8 +45,8 @@ class PortfolioDetailsChatbot extends Component{
                         <div className="row">
                             <div className="col-lg-12">
                                 <div className="rn-page-title text-center pt--100">
-                                    <h2 className="title theme-gradient">rkguo.xyz chatbot</h2>
-                                    <p>GenAI + Cloud</p>
+                                    <h2 className="title theme-gradient">{t('project4')}</h2>
+                                    <p>{t('project4topic')}</p>
                                 </div>
                             </div>
                         </div>
@@ -56,18 +61,18 @@ class PortfolioDetailsChatbot extends Component{
                             <div className="col-lg-12">
                                 <div className="portfolio-details">
                                     <div className="inner">
-                                        <h2>Project Overview</h2>
-                                        <p className="subtitle">Full stack application developed using generative AI and backend engineering, deployed to the cloud</p>
+                                        <h2>{t('projectoverview')}</h2>
+                                        <p className="subtitle">{t('project4text1')}</p>
                                         {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p> */}
-                                        <h4 style={{"color":"orangered"}}>Please note the current implementation of Chatbot utilizes a different approach. This version of implementation is deprecated.</h4>
+                                        <h4 style={{"color":"orangered"}}>{t('project4text2')}</h4>
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
-                                                <span>Frontend</span>
+                                                <span>{t('frontend')}</span>
                                                 <h4>React</h4>
                                             </div>
 
                                             <div className="port-view">
-                                                <span>Backend</span>
+                                                <span>{t('backend')}</span>
                                                 <h4>FastAPI</h4>
                                                 <h4>LlamaIndex</h4>
                                                 <h4>Python 3.11</h4>
@@ -75,12 +80,12 @@ class PortfolioDetailsChatbot extends Component{
                                             </div>
 
                                             <div className="port-view">
-                                                <span>Database</span>
+                                                <span>{t('database')}</span>
                                                 <h4>LlamaIndex Local Vector Document Store</h4>
                                             </div>
 
                                             <div className="port-view">
-                                                <span>Deployment</span>
+                                                <span>{t('deployment')}</span>
                                                 <h4>Heroku</h4>
                                             </div>
                                         </div>
@@ -88,18 +93,18 @@ class PortfolioDetailsChatbot extends Component{
                                         <hr/>
                                         <hr/>
 
-                                        <h3>For more information</h3>
+                                        <h3>{t('learnmore')}</h3>
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
 
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Chatbot github repository </li>
-                                                <li><a href={`${MediumLink.link}`}>{MediumLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Medium article documenting my process</li>
+                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub </li>
+                                                <li><a href={`${MediumLink.link}`}>{MediumLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Medium </li>
                                                 
                                             </ul>
                                         </div>
 
-                                        <h3>Screenshots</h3>
+                                        <h2>{t('screenshot')}</h2>
 
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">

@@ -1,8 +1,11 @@
 // Used by portfolioLanding
 
 import React, { Component } from "react";
+import { LanguageContext } from "../../translation/languageContext";
 
 class ContactThree extends Component{
+    static contextType = LanguageContext;
+
     constructor(props){
         super(props);
         this.state = {
@@ -13,6 +16,8 @@ class ContactThree extends Component{
         };
     }
     render(){
+        const { t } = this.context;
+
         return(
             <div className="contact-form--1">
                 <div className="container">
@@ -20,10 +25,10 @@ class ContactThree extends Component{
                         <div className="col-lg-6 order-2 order-lg-1">
                             <div className="section-title text-left mb--50">
                                 <h2 className="title">{this.props.contactTitle}</h2>
-                                <p className="description">I am interested in full-time job opportunities. Contact me via phone: <a href="tel:+12064037493">+1 2064037493</a> or email:
-                                    <a href="mailto:leokwok1997@hotmail.com"> leokwok1997@hotmail.com</a>. Connect with me on <a href="https://www.linkedin.com/in/ruikang-guo-540742102/">LinkedIn, </a>
+                                <p className="description">{t('callme')}<a href="tel:+12064037493">+1 2064037493</a> / <a href="tel:+8613342964176">+86 13342964176</a>{t('emailme')}
+                                    <a href="mailto:leokwok1997@hotmail.com"> leokwok1997@hotmail.com</a>{t('socialme')}<a href="https://www.linkedin.com/in/ruikang-guo-540742102/">LinkedIn, </a>
                                     <a href="https://github.com/LeoKwo">GitHub, </a>
-                                    <a href="https://medium.com/@rkguo/">Medium, </a>and <a href="https://www.instagram.com/leokwo_rk/">Instagram</a>.
+                                    <a href="https://medium.com/@rkguo/">Medium, </a>& <a href="https://www.instagram.com/leokwo_rk/">Instagram</a>.
                                 </p>
                             </div>
                             <img src={`${this.props.contactImages}`} alt="image"/>
