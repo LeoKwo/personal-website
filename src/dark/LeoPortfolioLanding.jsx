@@ -17,9 +17,8 @@ import Chatbot from '../component/chatbot/chatbot';
 import { useLanguage } from '../translation/languageContext';
 import { FaLink } from "react-icons/fa";
 
-
 const PortfolioLanding = () => {
-    const { t } = useLanguage();
+    const { language, t } = useLanguage();
 
     let title = t('aboutme'),
         description = t('aboutmedesc');
@@ -72,11 +71,19 @@ const PortfolioLanding = () => {
                                     <div className="thumbnail">
                                         <img className="w-100" src="/assets/images/about/about-leo.jpg" alt="About Images"/>
                                         <div className="view-more-btn mt--60 mt_sm--30 text-center">
+                                            
+                                            {language === 'zh' && (
+                                            <a className="rn-button-style--2 btn-solid" href="https://share.weiyun.com/2avNx8ma">
+                                                <span style={{"display": "flex", "alignItems":"center"}}><FaCloudDownloadAlt />
+                                                &nbsp;&nbsp;{t('resume')}
+                                                </span>
+                                            </a>)}
+                                            {language === 'en' && (
                                             <a className="rn-button-style--2 btn-solid" href="https://cw6g.short.gy/resume">
                                                 <span style={{"display": "flex", "alignItems":"center"}}><FaCloudDownloadAlt />
                                                 &nbsp;&nbsp;{t('resume')}
                                                 </span>
-                                            </a>
+                                            </a>)}
                                         </div>
                                     </div>
                                 </div>
@@ -196,7 +203,7 @@ const PortfolioLanding = () => {
             {/* Start Contact Area */}
             <div id="contact" className="fix">
                 <div className="rn-contact-area ptb--120 bg_color--0">
-                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle={t('connect')} />
+                    <ContactThree contactImages="/assets/images/about/about-leo-sm.jpg" contactTitle={t('connect')} contactConnect={t('connect2')}  />
                 </div>
             </div>
             {/* End COntact Area */}
