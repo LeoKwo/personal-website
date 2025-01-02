@@ -23,7 +23,7 @@ const Chatbot = () => {
         setIsLoading(true); // Set loading state to true when the request starts
   
         try {
-            const url = "https://chattongyi-sawjcqgrkc.cn-hongkong.fcapp.run";
+            const url = "https://chattongyi-sawjcqgrkc.cn-hongkong-vpc.fcapp.run" // 阿里云内网URL
             const payload = {
                 msg: inputValue,
                 thread_id: 1,

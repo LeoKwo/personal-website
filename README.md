@@ -8,6 +8,9 @@ Or type rkguo.xyz to your browser.
 sudo apt update
 sudo apt install nginx
 cd /var/www/personal-website
+
+npm run build
+
 sudo mkdir -p /var/www/html/personal-website
 sudo cp -r build/* /var/www/html/personal-website
 
