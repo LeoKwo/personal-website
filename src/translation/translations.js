@@ -81,7 +81,11 @@ export const translations = {
       gallerytext4: "I specialize in capturing urban landscapes, particularly entrancing cityscapes bathed in the hues of captivating sunsets. My deep fascination lies in the intricate dance of tonal nuances and delicate micro-contrasts.",
       gallerytext5: "Here is a collection of my favorites over the years. (Preview only, commerical use is prohibited.)",
       rkguo: "Ruikang Guo",
-
+      chatbotgreeting: "Hi! I am Ruikang Guo's digital clone, equipped with all the details about his career and skills. I can answer any questions you have. Let's get started!",
+      chatbotprompt: "Your question here...",
+      chatbotaction: "Submit question",
+      chatbotspinner: "🤔 Thinking...",
+      chatbotuser: "User"
     },
     zh: {
       home: "主页",
@@ -164,6 +168,10 @@ export const translations = {
       gallerytext4: "我擅长捕捉城市风光，尤其是那些沐浴在迷人日落余晖中的景象。我痴迷于色彩层次间的微妙变化，以及光影细腻的对比之美。",
       gallerytext5: "这些是我这些年来最喜欢的作品。（仅供预览，禁止商业用途。）",
       rkguo: "郭 睿康",
-
+      chatbotgreeting: "嗨！我是郭睿康的数字化分身，拥有关于他的职业经历和技能的一切信息。我可以回答您的任何问题，让我们开始吧！",
+      chatbotprompt: "您的问题...",
+      chatbotaction: "提交问题",
+      chatbotspinner: "🤔 思考中...",
+      chatbotuser: "网站用户"
     },
   };
