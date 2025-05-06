@@ -28,8 +28,7 @@ class PortfolioDetailsChatbot extends Component{
         this.setState({isOpen: true})
     }
     render(){
-        const { t } = this.context;
-
+        const { t, language } = this.context;
         return(
             <React.Fragment>
                 <PageHelmet pageTitle={t('project5')} />
@@ -117,14 +116,23 @@ class PortfolioDetailsChatbot extends Component{
 
                                         <h2>{t('demovideo')}</h2>
 
-                                        <div className="portfolio-view-list d-flex flex-wrap" style={{"marginBottom": "50px"}}>
-                                            <div className="port-view" style={{"marginTop" : "30px", "width" : "100%", "height" : "400px"}}>
-                                                {/* <iframe width="560" height="315" src="https://www.youtube.com/embed/G8MiBVOZdX4?si=4HMTIN6nK7gmbfcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe> */}
-                                                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G8MiBVOZdX4?si=4HMTIN6nK7gmbfcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                                                
-                                            </div>
-                                        </div>
+                                        {
+                                            language === 'zh' ? (
+                                                <div className="portfolio-view-list d-flex flex-wrap" style={{"marginBottom": "50px"}}>
+                                                    <div className="port-view" style={{"marginTop" : "30px", "width" : "100%", "height" : "400px"}}>
+                                                        <iframe width="100%" height="100%" src="//player.bilibili.com/player.html?bvid=BV1qFVyzMEpq&page=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                                                    </div>
+                                                </div>
+                                            ) : (
+                                                <div className="portfolio-view-list d-flex flex-wrap" style={{"marginBottom": "50px"}}>
+                                                    <div className="port-view" style={{"marginTop" : "30px", "width" : "100%", "height" : "400px"}}>
+                                                        <iframe width="100%" height="100%" src="https://www.youtube.com/embed/G8MiBVOZdX4?si=4HMTIN6nK7gmbfcI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                                                    </div>
+                                                </div>
+                                            )
+                                        }
 
+                                        
                                         <h2>{t('screenshot')}</h2>
 
                                         <div className="portfolio-view-list d-flex flex-wrap">
