@@ -4,7 +4,8 @@ import PageHelmet from "../component/common/Helmet";
 import { FaGithub, FaMedium } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import LeoHeader2 from "../component/header/LeoHeader2";
+// import LeoHeader2 from "../component/header/LeoHeader2";
+import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import { LanguageContext } from "../translation/languageContext";
 
@@ -30,12 +31,14 @@ class PortfolioDetailsChatbot extends Component{
         const { t } = this.context;
 
         return(
+            <div className="active-dark">
             <React.Fragment>
                 <PageHelmet pageTitle={t('project4')} />
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
-                <LeoHeader2 logo="symbol-dark" />
+                {/* <LeoHeader2 logo="symbol-dark" /> */}
+                <LeoHeader logo="symbol-dark" color="color-black" />
 
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg-chatbot"  data-black-overlay="4">
@@ -63,7 +66,6 @@ class PortfolioDetailsChatbot extends Component{
                                     <div className="inner">
                                         <h2>{t('projectoverview')}</h2>
                                         <p className="subtitle">{t('project4text1')}</p>
-                                        {/* <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commod viverra maecenas accumsan lacus vel facilisis. ut labore et dolore magna aliqua. </p> */}
                                         <h4 style={{"color":"orangered"}}>{t('project4text2')}</h4>
                                         <div className="portfolio-view-list d-flex flex-wrap">
                                             <div className="port-view">
@@ -98,8 +100,8 @@ class PortfolioDetailsChatbot extends Component{
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
 
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub </li>
-                                                <li><a href={`${MediumLink.link}`}>{MediumLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Medium </li>
+                                                <li style={{"color": "rgba(255,255,255,0.75)"}}><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub </li>
+                                                <li style={{"color": "rgba(255,255,255,0.75)"}}><a href={`${MediumLink.link}`}>{MediumLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Medium </li>
                                                 
                                             </ul>
                                         </div>
@@ -209,6 +211,7 @@ class PortfolioDetailsChatbot extends Component{
 
 
             </React.Fragment>
+            </div>
         )
     }
 }

@@ -43,9 +43,9 @@ class Header extends Component{
         }else if(logo === 'symbol-dark'){
             logoUrl = <img src="/assets/images/logo/logo-leo-gray.png" alt="Digital Agency" />;
         }else if(logo === 'symbol-light'){
-            logoUrl = <img src="/assets/images/logo/logo-leo-gray.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-leo.png" alt="Digital Agency" />;
         }else{
-            logoUrl = <img src="/assets/images/logo/logo-leo-gray.png" alt="Digital Agency" />;
+            logoUrl = <img src="/assets/images/logo/logo-leo.png" alt="Digital Agency" />;
         }
 
         

@@ -4,7 +4,7 @@ import ModalVideo from 'react-modal-video';
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import LeoHeader2 from "../component/header/LeoHeader2";
+import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import { LanguageContext } from "../translation/languageContext";
 
@@ -34,13 +34,14 @@ class PortfolioDetailsStudent extends Component{
         const { t } = this.context;
 
         return(
+            <div className="active-dark">
             <React.Fragment>
                 <PageHelmet pageTitle={t('project2')} />
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
-                <LeoHeader2 logo="symbol-dark" />
+                <LeoHeader logo="symbol-dark" color="color-black" />
                 
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7">
@@ -103,7 +104,7 @@ class PortfolioDetailsStudent extends Component{
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
                                                 
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
+                                                <li style={{"color": "rgba(255,255,255,0.75)"}}><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
                                                 {
                                                 // SocialShare.map((val , i) => (
                                                 //     <li key={i}><a href={`${val.link}`}>{val.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;Check out</li>
@@ -218,6 +219,7 @@ class PortfolioDetailsStudent extends Component{
 
 
             </React.Fragment>
+            </div>
         )
     }
 }

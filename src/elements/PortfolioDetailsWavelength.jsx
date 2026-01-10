@@ -4,7 +4,7 @@ import ModalVideo from 'react-modal-video';
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import LeoHeader2 from "../component/header/LeoHeader2";
+import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import { LanguageContext } from "../translation/languageContext";
 
@@ -34,13 +34,14 @@ class PortfolioDetailsWavelength extends Component{
         const { t } = this.context;
 
         return(
+            <div className="active-dark">
             <React.Fragment>
                 <PageHelmet pageTitle={t('project1')} />
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
-                <LeoHeader2 logo="symbol-dark" />
+                <LeoHeader logo="symbol-dark" color="color-black" />
 
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg-wavelength"  data-black-overlay="4">
@@ -265,6 +266,7 @@ class PortfolioDetailsWavelength extends Component{
 
 
             </React.Fragment>
+            </div>
         )
     }
 }

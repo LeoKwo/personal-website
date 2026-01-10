@@ -94,9 +94,32 @@
     .header-area.color-black a.rn-btn:hover{
         border-color: $theme-color;
     }
+    // .header-area.header--fixed.sticky {
+    //     background: #2a2a2c;
+    // }
+
     .header-area.header--fixed.sticky {
-        background: #2a2a2c;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 
+            inset 0 0 100px 100px rgba(255, 255, 255, 0.08);
     }
+
+    // .header-area.header--fixed.sticky::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     // width: 0;
+    //     height: 1px;
+    //     background: linear-gradient(
+    //         90deg,
+    //         rgba(255, 255, 255, 0.8),
+    //         transparent,
+    //     );
+    // }
+    
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn {
         color: #ffffff;
         border-color: #ffffff;
@@ -112,9 +135,9 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .backto-top>div {
-        background-color: #000;
-    }
+    // .backto-top>div {
+    //     background-color: #000;
+    // }
     .backto-top svg {
         color: #fff;
     }
