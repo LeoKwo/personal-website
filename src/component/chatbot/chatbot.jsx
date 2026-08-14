@@ -26,7 +26,7 @@ const Chatbot = () => {
                     </div>
                     <iframe
                         title='GuoGenius'
-                        src="https://guogenius-e9cbdf445f45.herokuapp.com/?embed=true"
+                        src="https://bot.ruikang.tech/?embed=true"
                         height="550"
                         style={{"width":"350px", "border":"none"}}
                     ></iframe>

@@ -1,0 +1,218 @@
+2026-08-14 15:38:39: (node:23062) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2026-08-14 15:38:39: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-14 15:38:39: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39:   ╷
+2026-08-14 15:38:39: 4 │ @import "../public/assets/scss/style";
+2026-08-14 15:38:39:   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-08-14 15:38:39:   ╵
+2026-08-14 15:38:39:     stdin 4:9  root stylesheet
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:39: 
+2026-08-14 15:38:39:   ╷
+2026-08-14 15:38:39: 7 │ @import 'node_modules/react-modal-video/scss/modal-video.scss';
+2026-08-14 15:38:39:   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-08-14 15:38:39:   ╵
+2026-08-14 15:38:39:     stdin 7:9  root stylesheet
+2026-08-14 15:38:39: 
+2026-08-14 15:38:41: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 15:38:41: 
+2026-08-14 15:38:41: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 15:38:41: 
+2026-08-14 15:38:42: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42:    ╷
+2026-08-14 15:38:42: 71 │ @import 'default/variables';
+2026-08-14 15:38:42:    │         ^^^^^^^^^^^^^^^^^^^
+2026-08-14 15:38:42:    ╵
+2026-08-14 15:38:42:     public/assets/scss/style.scss 71:9  @import
+2026-08-14 15:38:42:     stdin 4:9                           root stylesheet
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42:    ╷
+2026-08-14 15:38:42: 72 │ @import 'default/mixins';
+2026-08-14 15:38:42:    │         ^^^^^^^^^^^^^^^^
+2026-08-14 15:38:42:    ╵
+2026-08-14 15:38:42:     public/assets/scss/style.scss 72:9  @import
+2026-08-14 15:38:42:     stdin 4:9                           root stylesheet
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42:    ╷
+2026-08-14 15:38:42: 73 │ @import 'default/reset';
+2026-08-14 15:38:42:    │         ^^^^^^^^^^^^^^^
+2026-08-14 15:38:42:    ╵
+2026-08-14 15:38:42:     public/assets/scss/style.scss 73:9  @import
+2026-08-14 15:38:42:     stdin 4:9                           root stylesheet
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:42: Use list.nth instead.
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42:    ╷
+2026-08-14 15:38:42: 11 │         .#{$prefix}#{nth($i, 1)} {
+2026-08-14 15:38:42:    │                      ^^^^^^^^^^
+2026-08-14 15:38:42:    ╵
+2026-08-14 15:38:42:     public/assets/scss/default/_mixins.scss 11:16     config-bg-colors()
+2026-08-14 15:38:42:     public/assets/scss/default/_shortcode.scss 109:1  @import
+2026-08-14 15:38:42:     public/assets/scss/style.scss 77:9                @import
+2026-08-14 15:38:42:     stdin 4:9                                         root stylesheet
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 15:38:42: Use list.nth instead.
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 15:38:42: 
+2026-08-14 15:38:42:    ╷
+2026-08-14 15:38:42: 12 │             background: nth($i, 2);
+2026-08-14 15:38:42:    │                         ^^^^^^^^^^
+2026-08-14 15:38:42:    ╵
+2026-08-14 15:38:42:     public/assets/scss/default/_mixins.scss 12:16     config-bg-colors()
+2026-08-14 15:38:42:     public/assets/scss/default/_shortcode.scss 109:1  @import
+2026-08-14 15:38:42:     public/assets/scss/style.scss 77:9                @import
+2026-08-14 15:38:42:     stdin 4:9                                         root stylesheet
+2026-08-14 15:38:42: 
+2026-08-14 15:38:45: WARNING: 36 repetitive deprecation warnings omitted.
+2026-08-14 15:38:45: 
+2026-08-14 15:38:45: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 15:38:45: 
+2026-08-14 15:38:45: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 15:38:45: 
+2026-08-14 15:38:45: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 15:38:45: 
+2026-08-14 15:38:45: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 15:38:45: 
+2026-08-14 15:38:45: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 15:38:45: 
+2026-08-14 15:38:45: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 15:38:45: 
+2026-08-14 15:38:46: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 15:38:46: 
+2026-08-14 15:38:46: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 15:38:46: 
+2026-08-14 16:14:17: (node:33156) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+2026-08-14 16:14:17: (Use `node --trace-deprecation ...` to show where the warning was created)
+2026-08-14 16:14:17: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17:   ╷
+2026-08-14 16:14:17: 4 │ @import "../public/assets/scss/style";
+2026-08-14 16:14:17:   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-08-14 16:14:17:   ╵
+2026-08-14 16:14:17:     stdin 4:9  root stylesheet
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:17: 
+2026-08-14 16:14:17:   ╷
+2026-08-14 16:14:17: 7 │ @import 'node_modules/react-modal-video/scss/modal-video.scss';
+2026-08-14 16:14:17:   │         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-08-14 16:14:17:   ╵
+2026-08-14 16:14:17:     stdin 7:9  root stylesheet
+2026-08-14 16:14:17: 
+2026-08-14 16:14:20: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20:    ╷
+2026-08-14 16:14:20: 71 │ @import 'default/variables';
+2026-08-14 16:14:20:    │         ^^^^^^^^^^^^^^^^^^^
+2026-08-14 16:14:20:    ╵
+2026-08-14 16:14:20:     public/assets/scss/style.scss 71:9  @import
+2026-08-14 16:14:20:     stdin 4:9                           root stylesheet
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20:    ╷
+2026-08-14 16:14:20: 72 │ @import 'default/mixins';
+2026-08-14 16:14:20:    │         ^^^^^^^^^^^^^^^^
+2026-08-14 16:14:20:    ╵
+2026-08-14 16:14:20:     public/assets/scss/style.scss 72:9  @import
+2026-08-14 16:14:20:     stdin 4:9                           root stylesheet
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: DEPRECATION WARNING [import]: Sass @import rules are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:20: 
+2026-08-14 16:14:20:    ╷
+2026-08-14 16:14:20: 73 │ @import 'default/reset';
+2026-08-14 16:14:20:    │         ^^^^^^^^^^^^^^^
+2026-08-14 16:14:20:    ╵
+2026-08-14 16:14:20:     public/assets/scss/style.scss 73:9  @import
+2026-08-14 16:14:20:     stdin 4:9                           root stylesheet
+2026-08-14 16:14:20: 
+2026-08-14 16:14:21: DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:21: Use list.nth instead.
+2026-08-14 16:14:21: 
+2026-08-14 16:14:21: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:21: 
+2026-08-14 16:14:21:    ╷
+2026-08-14 16:14:21: 11 │         .#{$prefix}#{nth($i, 1)} {
+2026-08-14 16:14:21:    │                      ^^^^^^^^^^
+2026-08-14 16:14:21:    ╵
+2026-08-14 16:14:21:     public/assets/scss/default/_mixins.scss 11:16     config-bg-colors()
+2026-08-14 16:14:21:     public/assets/scss/default/_shortcode.scss 109:1  @import
+2026-08-14 16:14:21:     public/assets/scss/style.scss 77:9                @import
+2026-08-14 16:14:21:     stdin 4:9                                         root stylesheet
+2026-08-14 16:14:21: 
+2026-08-14 16:14:21: DEPRECATION WARNING [global-builtin]: Global built-in functions are deprecated and will be removed in Dart Sass 3.0.0.
+2026-08-14 16:14:21: Use list.nth instead.
+2026-08-14 16:14:21: 
+2026-08-14 16:14:21: More info and automated migrator: https://sass-lang.com/d/import
+2026-08-14 16:14:21: 
+2026-08-14 16:14:21:    ╷
+2026-08-14 16:14:21: 12 │             background: nth($i, 2);
+2026-08-14 16:14:21:    │                         ^^^^^^^^^^
+2026-08-14 16:14:21:    ╵
+2026-08-14 16:14:21:     public/assets/scss/default/_mixins.scss 12:16     config-bg-colors()
+2026-08-14 16:14:21:     public/assets/scss/default/_shortcode.scss 109:1  @import
+2026-08-14 16:14:21:     public/assets/scss/style.scss 77:9                @import
+2026-08-14 16:14:21:     stdin 4:9                                         root stylesheet
+2026-08-14 16:14:21: 
+2026-08-14 16:14:23: WARNING: 36 repetitive deprecation warnings omitted.
+2026-08-14 16:14:23: 
+2026-08-14 16:14:24: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: DEPRECATION WARNING [legacy-js-api]: The legacy JS API is deprecated and will be removed in Dart Sass 2.0.0.
+2026-08-14 16:14:24: 
+2026-08-14 16:14:24: More info: https://sass-lang.com/d/legacy-js-api
+2026-08-14 16:14:24: 

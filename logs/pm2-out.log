@@ -1,0 +1,247 @@
+2026-08-14 15:38:36: 
+2026-08-14 15:38:36: > ruikangguo@0.1.0 start
+2026-08-14 15:38:36: > node scripts/start.js
+2026-08-14 15:38:36: 
+2026-08-14 15:38:38: Starting the development server...
+2026-08-14 15:38:38: 
+2026-08-14 15:38:48: Compiled with warnings.
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/PortfolioDetailsChatbot.jsx
+2026-08-14 15:38:48:   Line 111:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/PortfolioDetailsMern.jsx
+2026-08-14 15:38:48:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 15:38:48:   Line 120:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 121:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 122:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 123:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 124:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/PortfolioDetailsGuoGenius.jsx
+2026-08-14 15:38:48:   Line 132:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/PortfolioDetailsPhotography.jsx
+2026-08-14 15:38:48:   Line 1:28:  'useState' is defined but never used     no-unused-vars
+2026-08-14 15:38:48:   Line 1:38:  'useCallback' is defined but never used  no-unused-vars
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/photos.jsx
+2026-08-14 15:38:48:   Line 200:9:  Duplicate key 'src'  no-dupe-keys
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/service/ServiceList.jsx
+2026-08-14 15:38:48:   Line 2:10:  'FiCast' is defined but never used            no-unused-vars
+2026-08-14 15:38:48:   Line 2:19:  'FiLayers' is defined but never used          no-unused-vars
+2026-08-14 15:38:48:   Line 2:30:  'FiUsers' is defined but never used           no-unused-vars
+2026-08-14 15:38:48:   Line 2:40:  'FiMonitor' is defined but never used         no-unused-vars
+2026-08-14 15:38:48:   Line 3:10:  'AiOutlineAndroid' is defined but never used  no-unused-vars
+2026-08-14 15:38:48:   Line 4:19:  'FaAndroid' is defined but never used         no-unused-vars
+2026-08-14 15:38:48:   Line 4:30:  'FaNodeJs' is defined but never used          no-unused-vars
+2026-08-14 15:38:48:   Line 4:40:  'FaDocker' is defined but never used          no-unused-vars
+2026-08-14 15:38:48:   Line 5:10:  'SiRedux' is defined but never used           no-unused-vars
+2026-08-14 15:38:48:   Line 5:29:  'SiMongodb' is defined but never used         no-unused-vars
+2026-08-14 15:38:48:   Line 7:10:  'RiBrainLine' is defined but never used       no-unused-vars
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/component/chatbot/chatbot.jsx
+2026-08-14 15:38:48:   Line 2:21:  'FaTimes' is defined but never used  no-unused-vars
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/contact/ContactThree.jsx
+2026-08-14 15:38:48:   Line 34:29:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+2026-08-14 15:38:48:   Line 42:33:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                        jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 48:33:  <iframe> elements must have a unique title property                                                                                                                                              jsx-a11y/iframe-has-title
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/PortfolioDetailsStudent.jsx
+2026-08-14 15:38:48:   Line 3:8:     'ModalVideo' is defined but never used                                                                     no-unused-vars
+2026-08-14 15:38:48:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 15:38:48:   Line 126:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 127:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 128:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 129:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/PortfolioDetailsWavelength.jsx
+2026-08-14 15:38:48:   Line 3:8:     'ModalVideo' is defined but never used                                                                     no-unused-vars
+2026-08-14 15:38:48:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 15:38:48:   Line 144:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 147:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 150:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 153:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 156:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 159:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 162:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 165:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48:   Line 168:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/elements/portfolio/PortfolioList.jsx
+2026-08-14 15:38:48:   Line 40:15:  'list' is assigned a value but never used  no-unused-vars
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/dark/LeoPortfolioLanding.jsx
+2026-08-14 15:38:48:   Line 40:41:   Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 15:38:48:   Line 219:37:  Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: ./src/translation/languageSwitcher.js
+2026-08-14 15:38:48:   Line 43:21:  Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 15:38:48: 
+2026-08-14 15:38:48: Search for the keywords to learn more about each warning.
+2026-08-14 15:38:48: To ignore, add // eslint-disable-next-line to the line before.
+2026-08-14 15:38:48: 
+2026-08-14 16:14:01: Compiling...
+2026-08-14 16:14:03: Compiled with warnings.
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/PortfolioDetailsChatbot.jsx
+2026-08-14 16:14:03:   Line 111:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/PortfolioDetailsMern.jsx
+2026-08-14 16:14:03:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 16:14:03:   Line 120:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 121:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 122:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 123:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 124:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/PortfolioDetailsGuoGenius.jsx
+2026-08-14 16:14:03:   Line 132:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/PortfolioDetailsPhotography.jsx
+2026-08-14 16:14:03:   Line 1:28:  'useState' is defined but never used     no-unused-vars
+2026-08-14 16:14:03:   Line 1:38:  'useCallback' is defined but never used  no-unused-vars
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/photos.jsx
+2026-08-14 16:14:03:   Line 200:9:  Duplicate key 'src'  no-dupe-keys
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/service/ServiceList.jsx
+2026-08-14 16:14:03:   Line 2:10:  'FiCast' is defined but never used            no-unused-vars
+2026-08-14 16:14:03:   Line 2:19:  'FiLayers' is defined but never used          no-unused-vars
+2026-08-14 16:14:03:   Line 2:30:  'FiUsers' is defined but never used           no-unused-vars
+2026-08-14 16:14:03:   Line 2:40:  'FiMonitor' is defined but never used         no-unused-vars
+2026-08-14 16:14:03:   Line 3:10:  'AiOutlineAndroid' is defined but never used  no-unused-vars
+2026-08-14 16:14:03:   Line 4:19:  'FaAndroid' is defined but never used         no-unused-vars
+2026-08-14 16:14:03:   Line 4:30:  'FaNodeJs' is defined but never used          no-unused-vars
+2026-08-14 16:14:03:   Line 4:40:  'FaDocker' is defined but never used          no-unused-vars
+2026-08-14 16:14:03:   Line 5:10:  'SiRedux' is defined but never used           no-unused-vars
+2026-08-14 16:14:03:   Line 5:29:  'SiMongodb' is defined but never used         no-unused-vars
+2026-08-14 16:14:03:   Line 7:10:  'RiBrainLine' is defined but never used       no-unused-vars
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/component/chatbot/chatbot.jsx
+2026-08-14 16:14:03:   Line 2:21:  'FaTimes' is defined but never used  no-unused-vars
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/contact/ContactThree.jsx
+2026-08-14 16:14:03:   Line 34:29:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+2026-08-14 16:14:03:   Line 42:33:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                        jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 48:33:  <iframe> elements must have a unique title property                                                                                                                                              jsx-a11y/iframe-has-title
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/PortfolioDetailsStudent.jsx
+2026-08-14 16:14:03:   Line 3:8:     'ModalVideo' is defined but never used                                                                     no-unused-vars
+2026-08-14 16:14:03:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 16:14:03:   Line 126:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 127:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 128:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 129:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/PortfolioDetailsWavelength.jsx
+2026-08-14 16:14:03:   Line 3:8:     'ModalVideo' is defined but never used                                                                     no-unused-vars
+2026-08-14 16:14:03:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 16:14:03:   Line 144:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 147:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 150:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 153:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 156:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 159:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 162:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 165:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03:   Line 168:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/elements/portfolio/PortfolioList.jsx
+2026-08-14 16:14:03:   Line 40:15:  'list' is assigned a value but never used  no-unused-vars
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/dark/LeoPortfolioLanding.jsx
+2026-08-14 16:14:03:   Line 40:41:   Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 16:14:03:   Line 219:37:  Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: ./src/translation/languageSwitcher.js
+2026-08-14 16:14:03:   Line 43:21:  Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 16:14:03: 
+2026-08-14 16:14:03: Search for the keywords to learn more about each warning.
+2026-08-14 16:14:03: To ignore, add // eslint-disable-next-line to the line before.
+2026-08-14 16:14:03: 
+2026-08-14 16:14:11: 
+2026-08-14 16:14:11: > ruikangguo@0.1.0 start
+2026-08-14 16:14:11: > node scripts/start.js
+2026-08-14 16:14:11: 
+2026-08-14 16:14:15: Starting the development server...
+2026-08-14 16:14:15: 
+2026-08-14 16:14:26: Compiled with warnings.
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/PortfolioDetailsChatbot.jsx
+2026-08-14 16:14:26:   Line 111:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/PortfolioDetailsMern.jsx
+2026-08-14 16:14:26:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 16:14:26:   Line 120:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 121:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 122:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 123:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 124:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/PortfolioDetailsGuoGenius.jsx
+2026-08-14 16:14:26:   Line 132:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/PortfolioDetailsPhotography.jsx
+2026-08-14 16:14:26:   Line 1:28:  'useState' is defined but never used     no-unused-vars
+2026-08-14 16:14:26:   Line 1:38:  'useCallback' is defined but never used  no-unused-vars
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/photos.jsx
+2026-08-14 16:14:26:   Line 200:9:  Duplicate key 'src'  no-dupe-keys
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/service/ServiceList.jsx
+2026-08-14 16:14:26:   Line 2:10:  'FiCast' is defined but never used            no-unused-vars
+2026-08-14 16:14:26:   Line 2:19:  'FiLayers' is defined but never used          no-unused-vars
+2026-08-14 16:14:26:   Line 2:30:  'FiUsers' is defined but never used           no-unused-vars
+2026-08-14 16:14:26:   Line 2:40:  'FiMonitor' is defined but never used         no-unused-vars
+2026-08-14 16:14:26:   Line 3:10:  'AiOutlineAndroid' is defined but never used  no-unused-vars
+2026-08-14 16:14:26:   Line 4:19:  'FaAndroid' is defined but never used         no-unused-vars
+2026-08-14 16:14:26:   Line 4:30:  'FaNodeJs' is defined but never used          no-unused-vars
+2026-08-14 16:14:26:   Line 4:40:  'FaDocker' is defined but never used          no-unused-vars
+2026-08-14 16:14:26:   Line 5:10:  'SiRedux' is defined but never used           no-unused-vars
+2026-08-14 16:14:26:   Line 5:29:  'SiMongodb' is defined but never used         no-unused-vars
+2026-08-14 16:14:26:   Line 7:10:  'RiBrainLine' is defined but never used       no-unused-vars
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/component/chatbot/chatbot.jsx
+2026-08-14 16:14:26:   Line 2:21:  'FaTimes' is defined but never used  no-unused-vars
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/contact/ContactThree.jsx
+2026-08-14 16:14:26:   Line 34:29:  Redundant alt attribute. Screen-readers already announce `img` tags as an image. You don’t need to use the words `image`, `photo,` or `picture` (or any specified custom words) in the alt prop  jsx-a11y/img-redundant-alt
+2026-08-14 16:14:26:   Line 42:33:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images                                                                                        jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 48:33:  <iframe> elements must have a unique title property                                                                                                                                              jsx-a11y/iframe-has-title
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/PortfolioDetailsStudent.jsx
+2026-08-14 16:14:26:   Line 3:8:     'ModalVideo' is defined but never used                                                                     no-unused-vars
+2026-08-14 16:14:26:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 16:14:26:   Line 126:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 127:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 128:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 129:53:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/PortfolioDetailsWavelength.jsx
+2026-08-14 16:14:26:   Line 3:8:     'ModalVideo' is defined but never used                                                                     no-unused-vars
+2026-08-14 16:14:26:   Line 11:7:    'SocialShare' is assigned a value but never used                                                           no-unused-vars
+2026-08-14 16:14:26:   Line 144:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 147:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 150:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 153:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 156:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 159:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 162:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 165:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26:   Line 168:49:  img elements must have an alt prop, either with meaningful text, or an empty string for decorative images  jsx-a11y/alt-text
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/elements/portfolio/PortfolioList.jsx
+2026-08-14 16:14:26:   Line 40:15:  'list' is assigned a value but never used  no-unused-vars
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/dark/LeoPortfolioLanding.jsx
+2026-08-14 16:14:26:   Line 40:41:   Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 16:14:26:   Line 219:37:  Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: ./src/translation/languageSwitcher.js
+2026-08-14 16:14:26:   Line 43:21:  Emojis should be wrapped in <span>, have role="img", and have an accessible description with aria-label or aria-labelledby  jsx-a11y/accessible-emoji
+2026-08-14 16:14:26: 
+2026-08-14 16:14:26: Search for the keywords to learn more about each warning.
+2026-08-14 16:14:26: To ignore, add // eslint-disable-next-line to the line before.
+2026-08-14 16:14:26: 
