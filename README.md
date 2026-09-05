@@ -4,7 +4,7 @@
 - Deployed to Alibaba Cloud SWAS
 
 ## Steps for code updates
-1. ```cd /opt/rkguo```
+1. ```cd ~/personal-website```
 2. ```git pull```
 3. ```npm run build```
 4. ```rm -rf /var/www/rkguo.xyz/```
