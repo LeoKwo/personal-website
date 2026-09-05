@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import { FaComment, FaTimes, FaWindowMinimize } from "react-icons/fa";
+import { FaWindowMinimize } from "react-icons/fa";
+import { BsChatDotsFill } from "react-icons/bs";
 import './chatbot.scss';
 
 const Chatbot = () => {
     const [expanded, setExpanded] = useState(false);
-  
 
     const toggleChatbot = () => {
         setExpanded(!expanded);
@@ -15,7 +15,7 @@ const Chatbot = () => {
             <script src="https://kit.fontawesome.com/bbbb8a85b2.js" crossorigin="anonymous"></script>
             {!expanded && 
                 <div className="chatbot-button" onClick={toggleChatbot}>
-                    <FaComment className="chatbot-button-icon"/>
+                    <BsChatDotsFill className="chatbot-button-icon"/>
                 </div>
             }
 
@@ -26,9 +26,9 @@ const Chatbot = () => {
                     </div>
                     <iframe
                         title='GuoGenius'
-                        src="https://bot.ruikang.tech/?embed=true"
+                        src="https://bot.rkguo.xyz/?embed=true"
                         height="550"
-                        style={{"width":"350px", "border":"none"}}
+                        style={{"width":"350px", "border":"none", "border-radius": "30px"}}
                     ></iframe>
                 </div>
             }

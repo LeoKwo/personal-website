@@ -64,7 +64,7 @@
         p {
             font-size: 18px;
             line-height: 30px;
-            color: rgba(29, 29, 36, 0.75);
+            color: rgba(255, 255, 255, 0.75);
             margin-bottom: 30px;
             
             @media #{$lg-layout} {
@@ -79,7 +79,8 @@
                 margin-bottom: 22px;
             }
             &.subtitle {
-                color: $heading-color;
+                // color: $heading-color;
+                color: rgba(255, 255, 255, 0.75);
                 font-size: 23px;
                 line-height: 44px;
                 margin-top: 28px;
@@ -107,7 +108,7 @@
                 margin: 0 40px;
                 span {
                     font-size: 16px;
-                    color: rgba(29, 29, 36, 0.75);
+                    color: rgba(255, 255, 255, 0.75);
                     display: block;
                     margin-bottom: 10px;
                     font-weight: 500;

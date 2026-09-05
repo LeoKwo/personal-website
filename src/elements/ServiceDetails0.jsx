@@ -6,6 +6,7 @@ import { FiChevronUp } from "react-icons/fi";
 import LeoHeader2 from "../component/header/LeoHeader2";
 import Header from "../component/header/Header";
 import LeoFooter from "../component/footer/LeoFooter";
+import { withTheme } from "../translation/withTheme";
 
 
 class ServiceDetails0 extends Component{
@@ -21,7 +22,7 @@ class ServiceDetails0 extends Component{
     }
     render(){
         return(
-            <div className="active-dark">
+            <div className={this.props.theme === 'dark' ? 'active-dark' : 'active-light'}>
             <React.Fragment>
                 
                 {/* Start Pagehelmet  */}
@@ -125,4 +126,4 @@ class ServiceDetails0 extends Component{
         )
     }
 }
-export default ServiceDetails0;
+export default withTheme(ServiceDetails0);

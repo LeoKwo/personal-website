@@ -31,7 +31,9 @@ class ContactThree extends Component{
                                     <a href="https://medium.com/@rkguo/">Medium, </a>& <a href="https://www.instagram.com/leokwo_rk/">Instagram</a>.
                                 </p>
                             </div>
-                            <img src={`${this.props.contactImages}`} alt="image"/>
+                            <img style={{
+                                borderRadius: 20
+                            }} src={`${this.props.contactImages}`} alt="image"/>
                             
                         </div>
                         {language === 'zh' && (

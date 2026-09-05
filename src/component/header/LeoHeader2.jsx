@@ -8,10 +8,10 @@ import { LanguageContext } from "../../translation/languageContext";
 
 
 const SocialShare = [
-    {Social: <FaLinkedinIn /> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
-    {Social: <FaGithub /> , link: 'https://github.com/LeoKwo'},
-    {Social: <FaMedium /> , link: 'https://medium.com/@rkguo/'},
-    {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
+    {Social: <FaLinkedinIn fill="rgba(0, 0, 0, 0.75)"/> , link: 'https://www.linkedin.com/in/ruikang-guo-540742102/'},
+    {Social: <FaGithub fill="rgba(0, 0, 0, 0.75)"/> , link: 'https://github.com/LeoKwo'},
+    {Social: <FaMedium fill="rgba(0, 0, 0, 0.75)"/> , link: 'https://medium.com/@rkguo/'},
+    {Social: <FaInstagram fill="rgba(0, 0, 0, 0.75)"/> , link: 'https://www.instagram.com/leokwo_rk/'},
 ]
 
 class LeoHeader2 extends Component{
@@ -119,7 +119,9 @@ class LeoHeader2 extends Component{
                             style={{
                                 display:"inline-flex",
                                 justifyContent: "center",
-                                color: "rgba(198,201,216,.75)"
+                                // color: "rgba(198,201,216,.75)"
+                                color: "rgba(0,0,0,.75)"
+
                             }}><FiMenu /></span>
                         </div>
                         {/* End Humberger Menu  */}

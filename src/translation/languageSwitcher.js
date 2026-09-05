@@ -41,7 +41,7 @@ const LanguageSwitcher = () => {
                     gap: "15px"
                     }}>
                     <p style={{
-                        color: "white"
+                        color: "white",
                     }}>🌎 Language / 语言</p>
                     
                     <div style={{

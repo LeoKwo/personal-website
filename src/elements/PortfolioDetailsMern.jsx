@@ -4,9 +4,10 @@ import PageHelmet from "../component/common/Helmet";
 import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import LeoHeader2 from "../component/header/LeoHeader2";
+import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import { LanguageContext } from "../translation/languageContext";
+import { withTheme } from "../translation/withTheme";
 
 const SocialShare = [
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
@@ -34,13 +35,14 @@ class PortfolioDetailsMern extends Component{
         const { t } = this.context;
 
         return(
+            <div className={this.props.theme === 'dark' ? 'active-dark' : 'active-light'}>
             <React.Fragment>
                 <PageHelmet pageTitle={t('project3')} />
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
 
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" logoname="logo.png" /> */}
-                <LeoHeader2 logo="symbol-dark" />
+                <LeoHeader logo="symbol-dark" color="color-black" />
                 
                 {/* Start Breadcrump Area */}
                 <div className="rn-page-title-area pt--120 pb--190 bg_image bg_image--33"  data-black-overlay="7">
@@ -100,7 +102,15 @@ class PortfolioDetailsMern extends Component{
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
-                                                <li><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
+                                                <li style={{
+                                                    "backgroundColor": "#222",
+                                                    "paddingTop": 10,
+                                                    "paddingBottom": 10,
+                                                    "paddingLeft": 10,
+                                                    "paddingRight": 20,
+                                                    "borderRadius": 10,
+                                                    "color": "rgba(255,255,255,0.75)"
+                                                }}><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
                                             </ul>
                                         </div>
 
@@ -213,7 +223,8 @@ class PortfolioDetailsMern extends Component{
 
 
             </React.Fragment>
+            </div>
         )
     }
 }
-export default PortfolioDetailsMern;
+export default withTheme(PortfolioDetailsMern);

@@ -4,6 +4,15 @@
 
 .active-dark {
     background: #141414;
+
+    // Hide light-mode rectangle image in dark theme (uses full bg photo instead)
+    .hero-light-image {
+        display: none;
+    }
+    // Show text overlay on dark background without gradient
+    .hero-light-content {
+        background: none !important;
+    }
     [data-overlay="6"]:before,
     [data-black-overlay="6"]:before,
     [data-white-overlay="6"]:before {
@@ -67,12 +76,14 @@
         background: currentColor;
     }
 
+    .slide.slider-style-3 .inner h1.title {
+        color: #ffffff !important; 
+    }
+
     .service.service__style--2:hover .content h3.title,
-    .service.service__style--2:hover .content p,
     .rn-testimonial-content .author-info h6 span ,
     .rn-testimonial-content .inner p ,
     .section-title p a ,
-    .slide.slider-style-3 .inner h1.title ,
     .color-black .mainmenunav ul.mainmenu>li>a ,
     ul.social-share.social-style--2.color-black li a ,
     .header-area.color-black a.rn-btn ,
@@ -94,9 +105,32 @@
     .header-area.color-black a.rn-btn:hover{
         border-color: $theme-color;
     }
+    // .header-area.header--fixed.sticky {
+    //     background: #2a2a2c;
+    // }
+
     .header-area.header--fixed.sticky {
-        background: #2a2a2c;
+        background: rgba(0, 0, 0, 0.5);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        box-shadow: 
+            inset 0 0 100px 100px rgba(255, 255, 255, 0.08);
     }
+
+    // .header-area.header--fixed.sticky::after {
+    //     content: '';
+    //     position: absolute;
+    //     top: 0;
+    //     left: 0;
+    //     // width: 0;
+    //     height: 1px;
+    //     background: linear-gradient(
+    //         90deg,
+    //         rgba(255, 255, 255, 0.8),
+    //         transparent,
+    //     );
+    // }
+    
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn {
         color: #ffffff;
         border-color: #ffffff;
@@ -112,9 +146,9 @@
         background-repeat: no-repeat;
         background-size: cover;
     }
-    .backto-top>div {
-        background-color: #000;
-    }
+    // .backto-top>div {
+    //     background-color: #000;
+    // }
     .backto-top svg {
         color: #fff;
     }

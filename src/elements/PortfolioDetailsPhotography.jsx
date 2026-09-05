@@ -5,12 +5,13 @@ import PageHelmet from "../component/common/Helmet";
 // import { FaGithub, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import ScrollToTop from 'react-scroll-up';
 import { FiChevronUp } from "react-icons/fi";
-import LeoHeader2 from "../component/header/LeoHeader2";
+import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { LanguageContext } from "../translation/languageContext";
+import { withTheme } from "../translation/withTheme";
 
 class PortfolioDetailsPhotography extends Component{
     static contextType = LanguageContext;
@@ -31,9 +32,10 @@ class PortfolioDetailsPhotography extends Component{
         const { t } = this.context;
 
         return(
+            <div className={this.props.theme === 'dark' ? 'active-dark' : 'active-light'}>
             <React.Fragment>
                 <PageHelmet pageTitle={t('gallery')} />
-                <LeoHeader2 logo="symbol-dark" />
+                <LeoHeader logo="symbol-dark" color="color-black" />
 
                 <div className="rn-page-title-area pt--120 pb--190 bg-gallery"  data-black-overlay="2">
                     <div className="container">
@@ -103,7 +105,8 @@ class PortfolioDetailsPhotography extends Component{
 
                 <LeoFooter />
             </React.Fragment>
+            </div>
         )
     }
 }
-export default PortfolioDetailsPhotography;
+export default withTheme(PortfolioDetailsPhotography);

@@ -15,16 +15,18 @@ import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import Chatbot from '../component/chatbot/chatbot';
 import { useLanguage } from '../translation/languageContext';
+import { ThemeContext } from '../translation/themeContext';
 import { FaLink } from "react-icons/fa";
 
 const PortfolioLanding = () => {
     const { language, t } = useLanguage();
+    const { theme } = React.useContext(ThemeContext);
 
     let title = t('aboutme'),
         description = t('aboutmedesc');
     // const PostList = BlogContent.slice(0 , 3);
     return (
-        <div className="active-dark">
+        <div className={theme === 'dark' ? 'active-dark' : 'active-light'}>
             <Helmet pageTitle={t('rkguo')} />
             <LeoHeader homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
@@ -33,15 +35,21 @@ const PortfolioLanding = () => {
                     {/* Start Single Slide */}
                     <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25" >
                         <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12">
+                            <div className="hero-light-wrapper">
+                                <div className="hero-light-image">
+                                    <img src="/assets/images/bg/bg-28.jpg" alt="Ruikang Guo" />
+                                </div>
+                                <div className="hero-light-content">
                                     <div className='inner text-left'>
                                         <span>{t('greeting')}</span>
                                         <h1 className="title">👋🏻 {t('name')}<br/>
                                         <TextLoop>
-                                            <span> {t('id1')}</span>
-                                            <span> {t('id2')}</span>
-                                            <span> intp</span>
+                                            <span> Baking code...</span>
+                                            <span> Capturing...</span>
+                                            <span> Vibing...</span>
+                                            {/* <span> {t('id1')}</span> */}
+                                            {/* <span> {t('id2')}</span> */}
+                                            {/* <span> intp</span> */}
                                         </TextLoop>{" "}
                                         </h1>
                                         <h2>@ {t('location')}</h2>
