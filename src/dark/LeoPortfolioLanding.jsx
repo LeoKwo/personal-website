@@ -35,15 +35,21 @@ const PortfolioLanding = () => {
                     {/* Start Single Slide */}
                     <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25" >
                         <div className="container">
-                            <div className="row align-items-center">
-                                <div className="col-lg-7">
+                            <div className="hero-light-wrapper">
+                                <div className="hero-light-image">
+                                    <img src="/assets/images/bg/bg-28.jpg" alt="Ruikang Guo" />
+                                </div>
+                                <div className="hero-light-content">
                                     <div className='inner text-left'>
                                         <span>{t('greeting')}</span>
                                         <h1 className="title">👋🏻 {t('name')}<br/>
                                         <TextLoop>
-                                            <span> {t('id1')}</span>
-                                            <span> {t('id2')}</span>
-                                            <span> intp</span>
+                                            <span> Baking code...</span>
+                                            <span> Capturing...</span>
+                                            <span> Vibing...</span>
+                                            {/* <span> {t('id1')}</span> */}
+                                            {/* <span> {t('id2')}</span> */}
+                                            {/* <span> intp</span> */}
                                         </TextLoop>{" "}
                                         </h1>
                                         <h2>@ {t('location')}</h2>
@@ -52,11 +58,6 @@ const PortfolioLanding = () => {
                                                 Contact
                                             </a>
                                         </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-5 hero-photo-circle">
-                                    <div className="hero-portrait">
-                                        <img src="/assets/images/bg/bg-28.jpg" alt="Ruikang Guo" />
                                     </div>
                                 </div>
                             </div>

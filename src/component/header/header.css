@@ -17,6 +17,7 @@
     cursor: pointer;
     transition: all 0.3s ease;
     margin-left: 12px;
+    margin-right: 12px;
     padding: 0;
     outline: none;
 }

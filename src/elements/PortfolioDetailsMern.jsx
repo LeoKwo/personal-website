@@ -102,7 +102,15 @@ class PortfolioDetailsMern extends Component{
 
                                         <div className="portfolio-share-link mt--20 pb--70 pb_sm--40">
                                             <ul className="social-share rn-lg-size d-flex justify-content-start liststyle mt--15">
-                                                <li style={{"color": "rgba(255,255,255,0.75)"}}><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
+                                                <li style={{
+                                                    "backgroundColor": "#222",
+                                                    "paddingTop": 10,
+                                                    "paddingBottom": 10,
+                                                    "paddingLeft": 10,
+                                                    "paddingRight": 20,
+                                                    "borderRadius": 10,
+                                                    "color": "rgba(255,255,255,0.75)"
+                                                }}><a href={`${GitHubLink.link}`}>{GitHubLink.Social}</a>&nbsp;&nbsp;&nbsp;&nbsp;GitHub</li>
                                             </ul>
                                         </div>
 
