@@ -55,8 +55,6 @@ class ServiceThree extends Component{
                 <div className="row">
                     {ServiceContent.map( (val , i) => (
                         <div className={`${column}`} key={i}>
-                            {/* <a href={"/service-details-" + i}> */}
-                            {/* <a href={"#stack"}> */}
                             <button href={"#stack"} onClick={this.openModal}>
                                 <div className="service service__style--2">
                                     <div className="icon">
@@ -70,7 +68,11 @@ class ServiceThree extends Component{
                             </button>
                         </div>
                     ))}
-                    <Modal className="tech-stack-modal" isOpen={this.state.isOpen} onClose={() => this.setState({isOpen: false})}>
+                    <Modal
+                        className="tech-stack-modal"
+                        isOpen={this.state.isOpen}
+                        onClose={() => this.setState({isOpen: false})}
+                    >
                         <div className="modal-wrapper">
                             <h2>{t('stacks')}</h2>
                             <p>{t('updatedtime')}</p>
@@ -152,7 +154,7 @@ class ServiceThree extends Component{
                     </Modal>
                 </div>
             </React.Fragment>
-        )
+        );
     }
 }
 export default ServiceThree;
