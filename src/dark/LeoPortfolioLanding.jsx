@@ -35,8 +35,8 @@ const PortfolioLanding = () => {
                     {/* Start Single Slide */}
                     <div className="slide personal-portfolio-slider slider-paralax slider-style-3 d-flex align-items-center justify-content-center bg_image bg_image--25" >
                         <div className="container">
-                            <div className="row">
-                                <div className="col-lg-12">
+                            <div className="row align-items-center">
+                                <div className="col-lg-7">
                                     <div className='inner text-left'>
                                         <span>{t('greeting')}</span>
                                         <h1 className="title">👋🏻 {t('name')}<br/>
@@ -52,6 +52,11 @@ const PortfolioLanding = () => {
                                                 Contact
                                             </a>
                                         </div>
+                                    </div>
+                                </div>
+                                <div className="col-lg-5 hero-photo-circle">
+                                    <div className="hero-portrait">
+                                        <img src="/assets/images/bg/bg-28.jpg" alt="Ruikang Guo" />
                                     </div>
                                 </div>
                             </div>

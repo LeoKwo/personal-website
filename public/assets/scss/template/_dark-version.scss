@@ -4,6 +4,11 @@
 
 .active-dark {
     background: #141414;
+
+    // Hide circular portrait in dark theme (uses full bg photo instead)
+    .hero-photo-circle {
+        display: none;
+    }
     [data-overlay="6"]:before,
     [data-black-overlay="6"]:before,
     [data-white-overlay="6"]:before {

@@ -10,7 +10,7 @@
    Light Theme Overrides
    =========================== */
 .active-light {
-    background: #ffffff;
+    background: #f8f7f4;
     color: #333;
 
     [data-overlay="6"]:before,
@@ -41,12 +41,12 @@
 
     .bg_color--1,
     .brand-separation {
-        background: #f5f5f5;
+        background: #efeeeb;
     }
 
     .bg_color--5,
     .footer-right {
-        background: #ffffff;
+        background: #f8f7f4;
     }
 
     .bg_image--3,
@@ -58,39 +58,47 @@
     }
 
     .bg_image--25 {
-        background-color: #141414;
-        background-image: url(/assets/images/bg/bg-28.jpg) !important;
-        background-position: center center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
+        background-color: #f8f7f4 !important;
+        background-image: none !important;
     }
 
-    // Hero section: keep dark photo but add gradient fade to light content
-    .personal-portfolio-slider {
-        position: relative;
-    }
-    .personal-portfolio-slider::after {
-        content: '';
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 200px;
-        background: linear-gradient(to bottom, transparent 0%, #f5f5f5 100%);
-        pointer-events: none;
-        z-index: 1;
+    // Circular portrait photo in hero
+    .hero-photo-circle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
-    // Keep hero text white since it's over a dark photo
-    .slide.slider-style-3 .inner h1.title {
-        color: #fff;
+    .hero-portrait {
+        width: 320px;
+        height: 320px;
+        border-radius: 50%;
+        overflow: hidden;
+        border: 4px solid #e0e0e0;
+        box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
     }
-    .slide.slider-style-3 .inner > span {
-        color: rgba(255, 255, 255, 0.8);
+
+    @media (max-width: 991px) {
+        .hero-portrait {
+            width: 220px;
+            height: 220px;
+            margin-top: 40px;
+        }
     }
-    .slide.slider-style-3 h2 {
-        color: rgba(255, 255, 255, 0.7);
+
+    @media (max-width: 575px) {
+        .hero-portrait {
+            width: 180px;
+            height: 180px;
+            margin-top: 30px;
+        }
     }
 
     .color-black .mainmenunav ul.mainmenu > li > a,
@@ -109,10 +117,10 @@
     }
 
     .header-area.header--fixed.sticky {
-        background: rgba(255, 255, 255, 0.85);
+        background: rgba(248, 247, 244, 0.85);
         backdrop-filter: blur(15px);
         -webkit-backdrop-filter: blur(15px);
-        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.08);
+        box-shadow: 0 2px 20px rgba(0, 0, 0, 0.06);
     }
 
     .header-area.header--fixed.sticky .header-wrapper a.rn-btn {
@@ -126,8 +134,8 @@
     }
 
     .creative-service-wrapper .row.creative-service .service.service__style--2 {
-        background: #fff;
-        box-shadow: 0 2px 10px rgba(0,0,0,0.06);
+        background: #f8f7f4;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.04);
     }
 
     .contact-form--1 input,
@@ -139,8 +147,40 @@
     .personal-portfolio-slider::before {
         display: none;
     }
+
+    // Back to top button - light theme
+    .backto-top > div {
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1) !important;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+    }
     .backto-top svg {
         color: #333;
+    }
+
+    // Chatbot - light theme
+    .chatbot-container {
+        background: rgba(255, 255, 255, 0.9) !important;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+        box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1) !important;
+        border: 1px solid rgba(0, 0, 0, 0.06);
+    }
+    .chatbot-button-icon {
+        color: #333 !important;
+    }
+    .chatbot-form-input {
+        background-color: #f8f7f4 !important;
+        border: 1px solid rgba(0, 0, 0, 0.1);
+    }
+    .chatbot-messages .user {
+        background-color: #efeeeb !important;
+        color: #333 !important;
+    }
+    .chatbot-messages .loading-indicator {
+        color: #555 !important;
     }
 
     ul.tab-style--1 li {
@@ -163,7 +203,7 @@
 
     // Footer light theme
     .footer-style-2 {
-        background: #f0f0f0 !important;
+        background: #eae9e5 !important;
     }
 
     .footer-style-2 p {
@@ -176,7 +216,7 @@
             color: #333 !important;
         }
         .header-area .header-wrapper .mainmenunav ul.mainmenu {
-            background: #fff;
+            background: #f8f7f4;
         }
         .header-area .header-wrapper.menu-open .close-menu span {
             color: #333 !important;
