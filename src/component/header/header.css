@@ -2,3 +2,71 @@
     width: 45px;
     height: 45px;
 }
+
+/* Theme Toggle Button */
+.theme-toggle-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 36px;
+    height: 36px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 50%;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-left: 12px;
+    padding: 0;
+    outline: none;
+}
+
+.theme-toggle-btn:hover {
+    border-color: #c6a672;
+    color: #c6a672;
+    transform: rotate(15deg);
+}
+
+/* Light theme overrides for toggle button */
+.active-light .theme-toggle-btn {
+    border-color: rgba(0, 0, 0, 0.3);
+    color: #333;
+}
+
+.active-light .theme-toggle-btn:hover {
+    border-color: #c6a672;
+    color: #c6a672;
+}
+
+/* Hide theme toggle on mobile - show inside hamburger menu instead */
+@media (max-width: 991px) {
+    .header-right .theme-toggle-btn {
+        display: none;
+    }
+}
+
+/* Mobile theme toggle inside hamburger menu */
+.theme-toggle-mobile {
+    display: none;
+}
+
+@media (max-width: 991px) {
+    .theme-toggle-mobile {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        margin-top: 20px;
+        padding-top: 20px;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .theme-toggle-mobile .theme-toggle-btn {
+        display: inline-flex !important;
+        margin-left: 0;
+    }
+
+    /* Light theme mobile menu */
+    .active-light .theme-toggle-mobile {
+        border-top-color: rgba(0, 0, 0, 0.1);
+    }
+}

@@ -7,6 +7,7 @@ import { FiChevronUp } from "react-icons/fi";
 import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import { LanguageContext } from "../translation/languageContext";
+import { withTheme } from "../translation/withTheme";
 
 const SocialShare = [
     {Social: <FaInstagram /> , link: 'https://www.instagram.com/leokwo_rk/'},
@@ -34,7 +35,7 @@ class PortfolioDetailsStudent extends Component{
         const { t } = this.context;
 
         return(
-            <div className="active-dark">
+            <div className={this.props.theme === 'dark' ? 'active-dark' : 'active-light'}>
             <React.Fragment>
                 <PageHelmet pageTitle={t('project2')} />
 
@@ -223,4 +224,4 @@ class PortfolioDetailsStudent extends Component{
         )
     }
 }
-export default PortfolioDetailsStudent;
+export default withTheme(PortfolioDetailsStudent);

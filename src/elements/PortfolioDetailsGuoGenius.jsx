@@ -7,6 +7,7 @@ import { FiChevronUp } from "react-icons/fi";
 import LeoHeader from "../component/header/LeoHeader";
 import LeoFooter from "../component/footer/LeoFooter";
 import { LanguageContext } from "../translation/languageContext";
+import { withTheme } from "../translation/withTheme";
 
 const GitHubLink =
     {Social: <FaGithub /> , link: 'https://github.com/LeoKwo/GuoGenius'}
@@ -30,7 +31,7 @@ class PortfolioDetailsChatbot extends Component{
     render(){
         const { t, language } = this.context;
         return(
-            <div className="active-dark">
+            <div className={this.props.theme === 'dark' ? 'active-dark' : 'active-light'}>
             <React.Fragment>
                 <PageHelmet pageTitle={t('project5')} />
                 {/* <LeoHeader headertransparent="header--transparent" colorblack="color--black" logo="symbol-dark" color="color-black" logoname="logo.png" /> */}
@@ -164,4 +165,4 @@ class PortfolioDetailsChatbot extends Component{
         )
     }
 }
-export default PortfolioDetailsChatbot;
+export default withTheme(PortfolioDetailsChatbot);

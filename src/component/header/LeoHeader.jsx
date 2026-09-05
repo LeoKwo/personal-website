@@ -5,6 +5,7 @@ import Scrollspy from 'react-scrollspy'
 import './header.css'
 import { LanguageContext } from "../../translation/languageContext";
 import LanguageSwitcher from "../../translation/languageSwitcher";
+import ThemeToggle from "./ThemeToggle";
 
 
 const SocialShare = [
@@ -90,6 +91,7 @@ class LeoHeader extends Component{
                                 <li><a href="/#project-blog">{t("blog")}</a></li>
                                 <li><a href="/#contact">{t('connect')}</a></li>
                                 <li><a href="/photography">{t('photo')}<FaLink/></a></li>
+                                <li className="theme-toggle-mobile"><ThemeToggle /></li>
                             </Scrollspy>
                         </nav>
                     </div>
@@ -101,6 +103,7 @@ class LeoHeader extends Component{
                                 ))}
                             </ul>
                         </div>
+                        <ThemeToggle/>
                         <LanguageSwitcher/>
                         { /*
                         <div className="header-btn">

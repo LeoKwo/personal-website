@@ -11,6 +11,7 @@ import Gallery from "react-photo-gallery";
 import { photos } from "./photos";
 import Carousel, { Modal, ModalGateway } from "react-images";
 import { LanguageContext } from "../translation/languageContext";
+import { withTheme } from "../translation/withTheme";
 
 class PortfolioDetailsPhotography extends Component{
     static contextType = LanguageContext;
@@ -31,7 +32,7 @@ class PortfolioDetailsPhotography extends Component{
         const { t } = this.context;
 
         return(
-            <div className="active-dark">
+            <div className={this.props.theme === 'dark' ? 'active-dark' : 'active-light'}>
             <React.Fragment>
                 <PageHelmet pageTitle={t('gallery')} />
                 <LeoHeader logo="symbol-dark" color="color-black" />
@@ -108,4 +109,4 @@ class PortfolioDetailsPhotography extends Component{
         )
     }
 }
-export default PortfolioDetailsPhotography;
+export default withTheme(PortfolioDetailsPhotography);

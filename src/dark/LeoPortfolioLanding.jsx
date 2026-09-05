@@ -15,16 +15,18 @@ import PortfolioList from "../elements/portfolio/PortfolioList";
 import ServiceList from "../elements/service/ServiceList";
 import Chatbot from '../component/chatbot/chatbot';
 import { useLanguage } from '../translation/languageContext';
+import { ThemeContext } from '../translation/themeContext';
 import { FaLink } from "react-icons/fa";
 
 const PortfolioLanding = () => {
     const { language, t } = useLanguage();
+    const { theme } = React.useContext(ThemeContext);
 
     let title = t('aboutme'),
         description = t('aboutmedesc');
     // const PostList = BlogContent.slice(0 , 3);
     return (
-        <div className="active-dark">
+        <div className={theme === 'dark' ? 'active-dark' : 'active-light'}>
             <Helmet pageTitle={t('rkguo')} />
             <LeoHeader homeLink="/" logo="symbol-dark" color="color-black"/>
             {/* Start Slider Area   */}
