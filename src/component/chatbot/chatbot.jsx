@@ -28,7 +28,7 @@ const Chatbot = () => {
                         title='GuoGenius'
                         src="https://bot.rkguo.xyz/?embed=true"
                         height="550"
-                        style={{"width":"350px", "border":"none"}}
+                        style={{"width":"350px", "border":"none", "border-radius": "30px"}}
                     ></iframe>
                 </div>
             }
